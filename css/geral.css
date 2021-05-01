@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+h1{
+    font-family: Roboto-Medium;
+    font-weight: bolder;
+}
+p, button, input{
+    font-family: Roboto-Light;
+
+}
+:root{
+    --purple: #8C85D2;
+}
+a{
+    text-decoration: none;
+}
