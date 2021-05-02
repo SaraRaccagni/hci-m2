@@ -5,7 +5,7 @@
     <title>teste</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/geral.css">
-
+    <script src="comp_tipo.js"></script>
 
 </head>
 
@@ -16,26 +16,17 @@
 
     <div id="welcome">
         <h1>Balada tipográfica</h1>
-
+        <div id="divisao">
+            <p id="word"> </p>
+        </div>
     </div>
+
+
 </div>
 
 
 
 <script>
- /*   var palavras = {verde:8,relva:4};
-
-    for (var prop in palavras){
-        var word= prop;
-        var size= palavras[prop] * 10 + "px";
-        var test= document.createElement("p");
-        test.style.fontSize=size;
-        console.log(size);
-        test.innerHTML= word;
-        document.getElementById("word").appendChild(test);
-
-    }*/
-
     function initMap(){
         var location = {lat: 40.203316, lng:-8.410257};
         var map= new google.maps.Map(document.getElementById("map"),{
@@ -53,6 +44,7 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAetyhucP3_NGC1cSmc-exFYtpvuym_Od8&map_ids=8c9ae4d3da1f0e1&callback=initMap">
 
 </script>
+
 
 </body>
 </html>

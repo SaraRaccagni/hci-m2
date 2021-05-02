@@ -32,8 +32,5 @@ if(isset( $_POST['textdata'])) {
 }
 
 
-
-
-
-
 ?>
+
