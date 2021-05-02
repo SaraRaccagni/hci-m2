@@ -26,6 +26,7 @@ if(isset( $_POST['textdata'])) {
     //array de volta p json string
     $encodedString = json_encode($palavras). PHP_EOL;
     echo "ENCODED: ". $encodedString;
+
     //guardar ficheiro texto
     if (file_put_contents('words.txt', $encodedString)) echo 'Data successfully saved';
      else echo 'Unable to save data';
