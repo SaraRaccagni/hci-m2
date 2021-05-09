@@ -1,8 +1,11 @@
 <?php
 if(isset( $_POST['textdata'])) {
     $word_input = $_POST['textdata'];
+    
     $fileContents = file_get_contents('words.txt');
     echo "filecontents: ". $fileContents. "<br/>" ;
+
+    echo "var pal=". $fileContents.";". "<br/>" ;
 
     //passan json do txt p array
     $palavras = json_decode($fileContents, true);

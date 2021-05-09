@@ -3,17 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addWord.php" beforeDir="false" afterPath="$PROJECT_DIR$/addWord.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,6 +32,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1qiwTuuxLOQlm2rCTz7LOonqtHI" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,22 +63,7 @@
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="" />
@@ -99,53 +87,12 @@
       <workItem from="1619868613331" duration="576000" />
       <workItem from="1619871420108" duration="2066000" />
       <workItem from="1619965224028" duration="1876000" />
-      <workItem from="1619971983256" duration="460000" />
-      <workItem from="1620565867258" duration="260000" />
-      <workItem from="1620569747940" duration="601000" />
+      <workItem from="1619971649255" duration="569000" />
     </task>
-    <task id="LOCAL-00001" summary="teste">
-      <created>1619972184086</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1619972184086</updated>
-    </task>
-    <task id="LOCAL-00002" summary="teste">
-      <created>1619972814025</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1619972814025</updated>
-    </task>
-    <task id="LOCAL-00003" summary="teste">
-      <created>1619972970599</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1619972970600</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="teste" />
-    <option name="LAST_COMMIT_MESSAGE" value="teste" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="-878" key="#CLI_Interpreters" timestamp="1619016581910">
@@ -169,6 +116,10 @@
     </state>
     <state x="501" y="-610" key="NewPhpFileDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016490202" />
     <state x="587" y="377" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@0.23.1440.813" timestamp="1619865145064" />
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-282.-1080.1920.1080@0.0.1440.900" timestamp="1619971762280" />
     <state x="231" y="-827" key="search.everywhere.popup" timestamp="1619557989277">
       <screen x="-282" y="-1057" width="1920" height="1057" />
     </state>
