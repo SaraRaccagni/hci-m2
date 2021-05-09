@@ -17,6 +17,8 @@ for (var values of Object.values(palavras)) {
 }*/
 var palavras = {verde:8,relva:4,ponte:14,patos:10,brincar:5, bicicletas:2};
 
+alert(pal);
+
 for (var prop in palavras){
     var word= prop;
     var composicao= document.getElementById("word");
