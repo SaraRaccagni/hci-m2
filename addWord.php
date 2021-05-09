@@ -37,7 +37,7 @@ if(isset( $_POST['textdata'])) {
 ?>
 
 <script type="text/javascript">
-    var pal = <?echo $fileContents?>;
+    var pal = '<?echo $fileContents;?>';
 
     document.write(pal);
 
