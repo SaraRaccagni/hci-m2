@@ -36,8 +36,10 @@ if(isset( $_POST['textdata'])) {
 
 ?>
 
-<script>
-    var pal='<?php echo 'oi';?>';
+<script type="text/javascript">
+   /* var pal=""; */
+   var pal;
+  pal= "<?php echo $encodedString ?>;";
     document.write(pal);
    /* for (var prop in pal) {
         var word = prop;
