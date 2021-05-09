@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kika.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addWord.php" beforeDir="false" afterPath="$PROJECT_DIR$/addWord.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
-    </list>
+    <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620573123338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="alterei as cenas só no kika.php">
+      <created>1620589347029</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620589347030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nem sei" />
-    <option name="LAST_COMMIT_MESSAGE" value="nem sei" />
+    <MESSAGE value="alterei as cenas só no kika.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterei as cenas só no kika.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="-878" key="#CLI_Interpreters" timestamp="1619016581910">
