@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,9 @@
     <link rel="stylesheet" href="css/geral.css">
 
 </head>
-
+<?php
+$fileContentsnovo = file_get_contents('words.txt');
+?>
 <body>
 
 <div id="intro">
@@ -17,14 +21,10 @@
         <h1>Balada tipográfica</h1>
 
         <div id="divisao">
-            <p id="word">
 
-            </p>
 
         </div>
     </div>
-
-
 </div>
 
 
@@ -48,8 +48,10 @@
 
 </script>
 <script src="comp_tipo.js"></script>
-<script>var novaspalavras = {relva:4,ponte:14,patos:10,brincar:5, bicicletas:2, urso:10, caes:5};
-ola(novaspalavras)
+<script>
+    var novaspalavras=<?php echo $fileContentsnovo ?>;
+
+    compPalavras(novaspalavras);
 </script>
 
 </body>
