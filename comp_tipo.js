@@ -15,43 +15,52 @@ for (var values of Object.values(palavras)) {
     }
     console.log(values);
 }*/
-var palavras = {verde:8,relva:4,ponte:14,patos:10,brincar:5, bicicletas:2};
 
-alert(pal);
+var palavras = {verde:8,relva:4,ponte:14,patos:10,brincar:5, bicicletas:2, urso:10, caes:5};
 
 for (var prop in palavras){
     var word= prop;
-    var composicao= document.getElementById("word");
+    // var composicao= document.getElementById("word");
+
+    var composicao_cont= document.getElementById("divisao");
+
 
     /*Aumentar palavra consoante as vezes que é inserida*/
-    var size= palavras[prop] * 0.5 + "vw";
+    var size= palavras[prop] * 35 + "%";
 
-    /*div id=divisao*/
-    var div= document.getElementById("divisao");
-    div.style.width=40 + "vw";
-    div.style.height=50 + "vh";
 
     /*Crear tag p para inserir as palavras*/
-    var test= document.createElement("p");
+    var palavra_cont= document.createElement("div");
+    palavra_cont.className="palavra_cont";
+
+    composicao_cont.appendChild(palavra_cont);
+
+    var palavra= document.createElement("p");
+
+    palavra_cont.appendChild(palavra);
+
+    palavra.innerHTML= word;
+
+
+    composicao_cont.style.display="grid";
+    composicao_cont.style.gridTemplateColumns= "auto" ;
+    composicao_cont.style.gridTemplateRows= "6vh 20vh" ;
+
+
+    palavra_cont.style.float="left";
+    palavra_cont.style.width=size;
 
     /*Estilizar as palavras*/
-    test.style.fontSize=size;
-    test.style.textTransform= "uppercase";
-    test.style.fontWeight= "bold";
-    test.style.fontFamily= "Roboto Condensed, sans-serif";
-    test.style.display= "inline-block";
-    test.style.margin=0;
-    test.style.paddingLeft= 0.5 + "vw";
-
-   /*var max= palavras[prop].MAX_VALUE;
-    if(test === max){
-        test.style.transform = "rotate(90deg)";
-    }*/
+    palavra.style.fontSize=size;
+    palavra.style.textTransform= "uppercase";
+    palavra.style.fontWeight= "bold";
+    palavra.style.fontFamily= "Roboto Condensed, sans-serif";
+    palavra.style.margin=0;
+    palavra.style.padding=0;
+    palavra.style.float= "left";
 
 
-    composicao.style.margin=0;
 
     console.log(size);
-    test.innerHTML= word;
-    composicao.appendChild(test);
+    //composicao.appendChild(test);
 }

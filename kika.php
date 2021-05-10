@@ -36,16 +36,7 @@ if(isset( $_POST['textdata'])) {
 
 ?>
 
-<script type="text/javascript">
-   /* var pal=""; */
-   var pal;
-  pal= "<?php echo $encodedString ?>;";
-    document.write(pal);
-   /* for (var prop in pal) {
-        var word = prop;
-        var composicao = document.getElementById("word");
-        var test= document.createElement("p");
-        test.innerHTML= word;
-        composicao.appendChild(test);
-    }*/
-</script>
+<script>
+    var x = "<?php echo"$encodedString"?>";
+    document.write(x);
+    </script>
