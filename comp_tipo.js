@@ -27,8 +27,7 @@ function compPalavras(palavras2) {
 
 
         /*Aumentar palavra consoante as vezes que é inserida*/
-        var size = palavras[prop] * 35 + "%";
-
+        var size = palavras2[prop] * 35 + "%";
 
         /*Crear tag p para inserir as palavras*/
         var palavra_cont = document.createElement("div");
@@ -59,7 +58,6 @@ function compPalavras(palavras2) {
         palavra.style.margin = 0;
         palavra.style.padding = 0;
         palavra.style.float = "left";
-
 
         console.log(size);
         //composicao.appendChild(test);
