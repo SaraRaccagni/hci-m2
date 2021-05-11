@@ -21,8 +21,6 @@ $fileContentsnovo = file_get_contents('words.txt');
         <h1>Balada tipográfica</h1>
 
         <div id="divisao">
-
-
         </div>
     </div>
 </div>

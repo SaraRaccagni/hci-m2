@@ -1,27 +1,7 @@
-/*var palavras= {"verde":"3", "relva": "4", "ponte":"5"};
-
-for (var key in palavras) {
-
- var test = document.createElement("p");
-        test.innerHTML = key;
-        document.getElementById("demo").appendChild(test);
-        console.log(key);
-}
-
-for (var values of Object.values(palavras)) {
-
-    if(values>6){
-        document.getElementById("demo").style.fontSize = "x-large";
-    }
-    console.log(values);
-}*/
-
-//var palavras = {verde:8,relva:4,ponte:14,patos:10,brincar:5, bicicletas:2, urso:10, caes:5};
 
 function compPalavras(palavras2) {
     for (var prop in palavras2) {
         var word = prop;
-        // var composicao= document.getElementById("word");
 
         var composicao_cont = document.getElementById("divisao");
 
@@ -60,6 +40,5 @@ function compPalavras(palavras2) {
         palavra.style.float = "left";
 
         console.log(size);
-        //composicao.appendChild(test);
     }
 }
