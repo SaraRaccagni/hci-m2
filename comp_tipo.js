@@ -7,7 +7,7 @@ function compPalavras(palavras2) {
 
 
         /*Aumentar palavra consoante as vezes que é inserida*/
-        var size = palavras2[prop] * 35 + "%";
+        var size = palavras2[prop] * 80 + "%";
 
         /*Crear tag p para inserir as palavras*/
         var palavra_cont = document.createElement("div");
@@ -22,13 +22,9 @@ function compPalavras(palavras2) {
         palavra.innerHTML = word;
 
 
-        composicao_cont.style.display = "grid";
-        composicao_cont.style.gridTemplateColumns = "auto";
-        composicao_cont.style.gridTemplateRows = "6vh 20vh";
+        composicao_cont.style.display = "flex";
 
 
-        palavra_cont.style.float = "left";
-        palavra_cont.style.width = size;
 
         /*Estilizar as palavras*/
         palavra.style.fontSize = size;

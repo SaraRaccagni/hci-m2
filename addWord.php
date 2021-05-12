@@ -1,5 +1,5 @@
 <?php
-//header('Location: index.html');
+//header('Location: palavra.html');
 
     $fileContents = file_get_contents('words.txt');
     echo "filecontents: ". $fileContents. "<br/>" ;

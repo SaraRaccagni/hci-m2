@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>teste</title>
+    <title>Balada Tipográfica</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/geral.css">
 
@@ -18,9 +18,10 @@ $fileContentsnovo = file_get_contents('words.txt');
     <div id="map"></div>
 
     <div id="welcome">
-        <h1>Balada tipográfica</h1>
+<!--        <h1>Balada tipográfica</h1>-->
 
         <div id="divisao">
+
         </div>
     </div>
 </div>
