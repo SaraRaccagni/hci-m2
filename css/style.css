@@ -33,3 +33,7 @@
     color:white;
     margin: 0.5%;
 }
+
+#mapid {
+    width: 50vw;
+    height: 100vh; }

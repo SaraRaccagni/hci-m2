@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +5,13 @@
     <title>Balada Tipográfica</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
 
 </head>
 <?php
@@ -26,33 +31,15 @@ $fileContentsnovo = file_get_contents('words.txt');
     </div>
 </div>
 
+<div id="mapid"></div>
 
-
-<script>
-    function initMap(){
-        var location = {lat: 40.203316, lng:-8.410257};
-        var map= new google.maps.Map(document.getElementById("map"),{
-            zoom: 15,
-            center: location
-        });
-        var marker= new google.maps.Marker({
-            position: location,
-            map:map
-        });
-    }
-
-</script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAetyhucP3_NGC1cSmc-exFYtpvuym_Od8&map_ids=8c9ae4d3da1f0e1&callback=initMap">
-
-</script>
 <script src="comp_tipo.js"></script>
 <script>
     var novaspalavras=<?php echo $fileContentsnovo ?>;
 
     compPalavras(novaspalavras);
 </script>
-
+<script src="mapa.js"></script>
 </body>
 </html>
 

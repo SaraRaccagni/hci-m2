@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="adicionei palavras, apaguei teste.php e index.html (problema contagem plavras)">
+    <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mapa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addWord.php" beforeDir="false" afterPath="$PROJECT_DIR$/addWord.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -66,7 +65,19 @@
       <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -96,6 +107,10 @@
       <workItem from="1619971649255" duration="569000" />
       <workItem from="1620656960320" duration="1332000" />
       <workItem from="1620660441530" duration="4912000" />
+      <workItem from="1620845416563" duration="460000" />
+      <workItem from="1620848212602" duration="103000" />
+      <workItem from="1620848801194" duration="946000" />
+      <workItem from="1620931237664" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -143,29 +158,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nem sei" />
     <MESSAGE value="alterei as cenas só no kika.php" />
     <MESSAGE value="alterei as cenas só no kika.php e comp_tipo.js" />
-    <MESSAGE value="adicionei palavras, apaguei teste.php e index.html (problema contagem plavras)" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionei palavras, apaguei teste.php e index.html (problema contagem plavras)" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterei as cenas só no kika.php e comp_tipo.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="-878" key="#CLI_Interpreters" timestamp="1619016581910">
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="266" y="-878" key="#CLI_Interpreters/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016581910" />
-    <state x="449" y="260" key="#Notifications" timestamp="1620836835706">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="449" y="260" key="#Notifications/0.23.1440.813@0.23.1440.813" timestamp="1620836835706" />
     <state x="370" y="-890" key="#PHP" timestamp="1619016583189">
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
@@ -178,22 +189,20 @@
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="416" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016482802" />
-    <state x="370" y="23" key="CommitChangelistDialog2" timestamp="1620836798147">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="211" y="-870" key="CommitChangelistDialog2" timestamp="1620573123131">
+      <screen x="-282" y="-1057" width="1920" height="1057" />
     </state>
     <state x="211" y="-870" key="CommitChangelistDialog2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573123131" />
-    <state x="370" y="23" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1620836798147" />
     <state x="501" y="-597" key="NewPhpFileDialog" timestamp="1620573705873">
       <screen x="-282" y="-1057" width="1920" height="1057" />
     </state>
     <state x="501" y="-610" key="NewPhpFileDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016490202" />
     <state x="501" y="-597" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573705873" />
     <state x="587" y="377" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@0.23.1440.813" timestamp="1619865145064" />
-    <state x="365" y="293" key="Vcs.Push.Dialog.v2" timestamp="1620836830422">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="204" y="-706" key="Vcs.Push.Dialog.v2" timestamp="1620573125051">
+      <screen x="-282" y="-1057" width="1920" height="1057" />
     </state>
     <state x="204" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573125051" />
-    <state x="365" y="293" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1620836830422" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
