@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mapa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapa.js" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +107,8 @@
       <workItem from="1620845416563" duration="460000" />
       <workItem from="1620848212602" duration="103000" />
       <workItem from="1620848801194" duration="946000" />
-      <workItem from="1620931237664" duration="1954000" />
+      <workItem from="1620931237664" duration="2178000" />
+      <workItem from="1621095665704" duration="261000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -147,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620660474432</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="alterei cenas index">
+      <created>1620937823561</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620937823561</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +175,8 @@
     <MESSAGE value="nem sei" />
     <MESSAGE value="alterei as cenas só no kika.php" />
     <MESSAGE value="alterei as cenas só no kika.php e comp_tipo.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="alterei as cenas só no kika.php e comp_tipo.js" />
+    <MESSAGE value="alterei cenas index" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterei cenas index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="-878" key="#CLI_Interpreters" timestamp="1619016581910">
