@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapa.js" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,6 +110,7 @@
       <workItem from="1620848801194" duration="946000" />
       <workItem from="1620931237664" duration="2178000" />
       <workItem from="1621095665704" duration="261000" />
+      <workItem from="1621256580252" duration="1222000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -152,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620937823561</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="alterei cenas index">
+      <created>1621256678325</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1621256678325</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
