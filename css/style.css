@@ -22,16 +22,15 @@
     font-size: 3rem;
 }
 #divisao{
-    padding: 4%;
+    padding: 3% 6%;
     display: flex;
-    width:100%;
     flex-wrap: wrap;
     justify-content: center;
 }
 .palavra_cont{
     width: fit-content;
     color:white;
-    margin: 0.5%;
+    margin: 1%;
 }
 
 #mapid {
