@@ -5,6 +5,7 @@
     <title>Balada Tipográfica</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/geral.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Links necessários para o mapa -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -36,6 +37,21 @@ $fileContentsnovo = file_get_contents('words.txt');
     </div>
 </div>
 
+    <div class="nav-menu">
+        <div class="menu-list">
+            <ul>
+                <li><a>O Projeto</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>A Equipa</a></li>
+                <li><a>Inserir Palavra</a></li>
+            </ul>
+        </div>
+        <div id="burger-wrap">
+            <a class="burger"><span></span></a>
+        </div>
+    </div>
+
+
 <div id="mapid"></div>
 
 <script src="comp_tipo.js"></script>
@@ -47,6 +63,19 @@ $fileContentsnovo = file_get_contents('words.txt');
 </script>
 
 <script src="mapa.js"></script>
+
+<script>
+    $('document').ready(function() {
+
+        $('.burger').click(function() {
+            $('.nav-menu').toggleClass("open");
+            $('.menu-list').toggleClass("list-open");
+        });
+
+    });
+</script>
+
+
 </body>
 </html>
 
