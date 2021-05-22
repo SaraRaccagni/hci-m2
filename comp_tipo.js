@@ -70,6 +70,9 @@ function compPalavras(palavras2) {
     });
     var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap);
 
+
+
+
     //COORDENADAS MOUSEOVER
     //poe os markers nos sitios
 

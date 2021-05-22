@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="add-word">
-    <form action="teste.php" method="post" id="form">
+    <form action="addWord.php" method="post" id="form">
         <h1>Insere uma palavra que associes a este local:</h1>
         <input id="input" type="text" name="textdata"><br>
         <input id="button" type="submit" name="submit">
@@ -19,3 +19,17 @@
 </div>
 </body>
 </html>
+<script>
+
+window.onload=function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    console.log(position.coords.latitude) ;
+    console.log(position.coords.longitude);
+}
+</script>

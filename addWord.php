@@ -60,7 +60,7 @@ $encodedString = json_encode( $palavras) . PHP_EOL;
 echo "<br>"."ENCODED: " ."<br>". $encodedString;
 
 //guardar ficheiro texto
-if (file_put_contents('geo.txt', $encodedString)) echo 'Data successfully saved';
+if (file_put_contents('words.txt', $encodedString)) echo 'Data successfully saved';
 else echo 'Unable to save data';
 
 ?>
