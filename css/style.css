@@ -71,6 +71,8 @@ a {
     height: 100%;
     top: 0;
     right: 0;
+
+
 }
 .menu-list {
     margin-top: 100px;
@@ -96,11 +98,14 @@ a {
     padding: 10px;
     background: none;
     color: #fff;
+    transition: 1s ;
+
 }
 .menu-list li:hover {
     background: #fff;
     color: #685EAC;
     cursor: pointer;
+    transition: 1s ;
 }
 
 /* Burger */
