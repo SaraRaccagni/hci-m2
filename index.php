@@ -21,7 +21,7 @@
 
 </head>
 <?php
-$fileContentsnovo = file_get_contents('test.txt');
+$fileContentsnovo = file_get_contents('words.txt');
 ?>
 <body>
 
@@ -30,7 +30,6 @@ $fileContentsnovo = file_get_contents('test.txt');
 
     <div id="welcome">
 <!--        <h1>Balada tipográfica</h1>-->
-
         <div id="divisao">
 
         </div>
@@ -58,8 +57,8 @@ $fileContentsnovo = file_get_contents('test.txt');
 
 <script>
     var novaspalavras=<?php echo $fileContentsnovo ?>;
-
     compPalavras(novaspalavras);
+
 </script>
 
 <script src="mapa.js"></script>
