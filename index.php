@@ -39,10 +39,10 @@ $fileContentsnovo = file_get_contents('words.txt');
     <div class="nav-menu">
         <div class="menu-list">
             <ul>
-                <li><a>O Projeto</a></li>
-                <li><a>FAQ</a></li>
-                <li><a>A Equipa</a></li>
-                <li><a>Inserir Palavra</a></li>
+                <li><a href="projeto.html">Product</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="equipa.html">A Equipa</a></li>
+                <li><a href="palavra.html">Inserir Palavra</a></li>
             </ul>
         </div>
         <div id="burger-wrap">

@@ -1,0 +1,47 @@
+body {
+    background-color: #8D85D1;
+    margin:0;
+}
+
+h1 {
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 20px;
+    width: 60%;
+}
+
+#coimbra_ft {
+    width:50vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#intro div{
+    margin-left: 50px;
+}
+
+a{
+    color: #8D85D1;
+    padding: 1% 2%;
+    background-color: #ffffff;
+    box-shadow: inset -7px -10px 7px rgba(104, 94, 172, 0.3);
+    border-radius: 20px;
+    font-size: 1rem;
+    border: none;
+    transition: 0.3s;
+}
