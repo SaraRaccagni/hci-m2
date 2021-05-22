@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapa.js" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +138,7 @@
       <workItem from="1621624213551" duration="3401000" />
       <workItem from="1621665778497" duration="590000" />
       <workItem from="1621666448680" duration="1453000" />
-      <workItem from="1621676888273" duration="5191000" />
+      <workItem from="1621676888273" duration="17236000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621366419716</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="novo mapa palavras ok">
+      <created>1621683824374</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1621683824375</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +228,8 @@
     <MESSAGE value="alterei as cenas só no kika.php e comp_tipo.js" />
     <MESSAGE value="alterei cenas index" />
     <MESSAGE value="alterei cenas mapa.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="alterei cenas mapa.js" />
+    <MESSAGE value="novo mapa palavras ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="novo mapa palavras ok" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="-878" key="#CLI_Interpreters" timestamp="1619016581910">

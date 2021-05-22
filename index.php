@@ -21,7 +21,7 @@
 
 </head>
 <?php
-$fileContentsnovo = file_get_contents('words.txt');
+$fileContentsnovo = file_get_contents('test.txt');
 ?>
 <body>
 
