@@ -62,7 +62,6 @@ $fileContentsnovo = file_get_contents('words.txt');
 </script>
 
 <script src="mapa.js"></script>
-
 <script>
     $('document').ready(function() {
 
@@ -73,6 +72,7 @@ $fileContentsnovo = file_get_contents('words.txt');
 
     });
 </script>
+
 
 
 </body>
