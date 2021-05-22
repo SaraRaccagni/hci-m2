@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/arvores.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addWord.php" beforeDir="false" afterPath="$PROJECT_DIR$/addWord.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapa.js" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -115,6 +114,31 @@
       <workItem from="1620931237664" duration="2178000" />
       <workItem from="1621095665704" duration="261000" />
       <workItem from="1621256580252" duration="1222000" />
+      <workItem from="1621448176272" duration="1643000" />
+      <workItem from="1621568998791" duration="21000" />
+      <workItem from="1621569115200" duration="19000" />
+      <workItem from="1621569185677" duration="28000" />
+      <workItem from="1621569273118" duration="11000" />
+      <workItem from="1621578965580" duration="205000" />
+      <workItem from="1621579219022" duration="79000" />
+      <workItem from="1621579768227" duration="437000" />
+      <workItem from="1621584972648" duration="11000" />
+      <workItem from="1621585685329" duration="293000" />
+      <workItem from="1621590854158" duration="1039000" />
+      <workItem from="1621594953422" duration="37000" />
+      <workItem from="1621595004467" duration="65000" />
+      <workItem from="1621595085910" duration="94000" />
+      <workItem from="1621595596482" duration="20000" />
+      <workItem from="1621606665552" duration="357000" />
+      <workItem from="1621607040546" duration="96000" />
+      <workItem from="1621607155182" duration="1469000" />
+      <workItem from="1621608818464" duration="3249000" />
+      <workItem from="1621613595634" duration="7292000" />
+      <workItem from="1621624121415" duration="75000" />
+      <workItem from="1621624213551" duration="3401000" />
+      <workItem from="1621665778497" duration="590000" />
+      <workItem from="1621666448680" duration="1453000" />
+      <workItem from="1621676888273" duration="5191000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -165,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621256678325</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="alterei cenas mapa.js">
+      <created>1621366419715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621366419716</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +220,8 @@
     <MESSAGE value="alterei as cenas só no kika.php" />
     <MESSAGE value="alterei as cenas só no kika.php e comp_tipo.js" />
     <MESSAGE value="alterei cenas index" />
-    <option name="LAST_COMMIT_MESSAGE" value="alterei cenas index" />
+    <MESSAGE value="alterei cenas mapa.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterei cenas mapa.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="-878" key="#CLI_Interpreters" timestamp="1619016581910">
