@@ -2,16 +2,19 @@
 header('Location:index.php');
 
 $string = file_get_contents('words.txt');
-$latitude=40.19213;
-$longitude=-8.50894;
+//$latitude=40.19213;
+//$longitude=-8.50894;
 
 $palavras = json_decode($string);
 var_dump($palavras);
 echo "<br>"."<br>";
 if (isset($_POST['textdata'])) {
 
-    $words_array = $palavras->features;//mau
+    $words_array = $palavras->features;
     $word_input = $_POST['textdata'];
+    $latitude = $_POST['latitude'];
+    $longitude = $_POST['longitude'];
+
     $word_exists = false;
 
     foreach ($palavras->features as $word) {
@@ -37,7 +40,7 @@ if (isset($_POST['textdata'])) {
             'type' => 'Feature',
             'geometry' => array(
                 'type' => 'Point',
-                'coordinates' => array($longitude, $latitude)
+                'coordinates' => array($latitude, $longitude)
             ),
             'properties' => array(
                 'palavra' => $word_input,

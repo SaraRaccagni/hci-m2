@@ -3,10 +3,11 @@
     height: 100vh;
     display: flex;
 }
-#map{
+
+#mapid {
     height: 100%;
-    width:50%;
-}
+    width:50%; }
+
 #welcome{
     background-color: var(--purple);
     height: 100%;
@@ -20,28 +21,18 @@
     color: white;
     text-transform: uppercase;
     font-size: 3rem;
+    padding: 1%;
 }
+
 #divisao{
     padding: 3% 6%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.palavra_cont{
-    width: fit-content;
-    color:white;
-    margin: 1%;
-    text-transform: uppercase;
-    font-family: Roboto-Medium;
-    font-weight: bolder;
-}
 
-#mapid {
-    position:absolute;
-    top: 0;
-    left:0;
-    width: 50vw;
-    height: 100vh; }
+
+
 
 /* menu */
 

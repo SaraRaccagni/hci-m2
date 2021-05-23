@@ -9,19 +9,31 @@
 </head>
 <body>
 <div id="add-word">
+
     <form action="addWord.php" method="post" id="form">
         <h1>Insere uma palavra que associes a este local:</h1>
         <input id="input" type="text" name="textdata"><br>
         <input id="button" type="submit" name="submit">
         <a href="index.php">
             Voltar
-        </a></form>
+        </a>
+
+        <textarea name="latitude" id="latitude">
+
+        </textarea>
+        <textarea name="longitude" id="longitude">
+
+        </textarea>
+    </form>
+
 </div>
+
 </body>
 </html>
 <script>
 
 window.onload=function getLocation() {
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
@@ -29,7 +41,16 @@ window.onload=function getLocation() {
     }
 }
 function showPosition(position) {
-    console.log(position.coords.latitude) ;
-    console.log(position.coords.longitude);
+    var lat = position.coords.latitude ;
+    var long = position.coords.longitude;
+
+    document.getElementById("latitude").innerHTML = long;
+   // document.getElementById("latitude").style.display = "none";
+
+
+    document.getElementById("longitude").innerHTML = lat;
+    //document.getElementById("longitude").style.display = "none";
+
+
 }
 </script>

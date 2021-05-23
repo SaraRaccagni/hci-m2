@@ -26,7 +26,7 @@ $fileContentsnovo = file_get_contents('words.txt');
 <body>
 
 <div id="intro">
-    <div id="map"></div>
+    <div id="mapid"></div>
 
     <div id="welcome">
 <!--        <h1>Balada tipográfica</h1>-->
@@ -39,7 +39,7 @@ $fileContentsnovo = file_get_contents('words.txt');
     <div class="nav-menu">
         <div class="menu-list">
             <ul>
-                <li><a href="projeto.html">Product</a></li>
+                <li><a href="projeto.html">Projeto</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="equipa.html">A Equipa</a></li>
                 <li><a href="palavra.html">Inserir Palavra</a></li>
@@ -51,7 +51,6 @@ $fileContentsnovo = file_get_contents('words.txt');
     </div>
 
 
-<div id="mapid"></div>
 
 <script src="comp_tipo.js"></script>
 
