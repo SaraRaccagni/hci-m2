@@ -27,6 +27,7 @@ function compPalavras(palavras2) {
 //-----------------------------------------------------------------------
 
     //definir visualização mapa
+
     var mymap = L.map('mapid').setView([40.1932,-8.4051], 10);
 
     // deifnir tile do mapa
@@ -125,11 +126,6 @@ function compPalavras(palavras2) {
 
             var coordinates = feature.geometry.coordinates;
 
-
-
-            layer.bindPopup('<h1>' + feature.properties.palavra + '</h1>');
-
-
             //console.log(feature.properties.rep)
             var repe = feature.properties.rep;
 
@@ -141,16 +137,31 @@ function compPalavras(palavras2) {
             h1_word.style.opacity = opacity;
             h1_word.innerHTML = feature.properties.palavra;
 
-            mymap.on('move', function() {
+            mymap.on('movestart', function() {
                 setAnimationSaxx ( 'h1' , 'saxx swing' ) ;
 
             });
 
             setSaxxMouseEffect ( 'h1' , 'saxx swing') ;
 
+            var popup = L.popup().setContent('<h1>' + feature.properties.palavra + '</h1>');
+            layer.bindPopup(popup).openPopup();
+
+
+
+            h1_word.addEventListener("click", function(){
+                layer.bindPopup(popup).openPopup();
+
+
+
+            });
+
+
+
         }
 
     }).addTo(mymap);
+
 
 
 

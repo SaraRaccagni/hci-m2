@@ -1,5 +1,5 @@
 <?php
-header('Location:index.html');
+header('Location:mapa_index.php');
 
 $string = file_get_contents('words.txt');
 //$latitude=40.19213;

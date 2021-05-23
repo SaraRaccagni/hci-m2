@@ -9,21 +9,8 @@
 
     <script src="saxxtext.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!--    <script src="https://iamharsh.design/saxxtext/lib/saxxtext.js"></script>-->
-
-
-    <!-- Links necessários para o mapa -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossorigin=""/>
-   Make sure you put this AFTER Leaflet's CSS
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script> -->
 
 </head>
 <?php
@@ -57,16 +44,29 @@ $fileContentsnovo = file_get_contents('words.txt');
         </div>
     </div>
 
-
 <script src="comp_tipo.js"></script>
 
 <script>
     var novaspalavras=<?php echo $fileContentsnovo ?>;
+
     compPalavras(novaspalavras);
 
 </script>
 
 <script src="menu.js"></script>
+
+<script>
+    var fonts = ['times', 'verdana', 'arial', 'montserrat', 'quicksand', 'roboto', 'lato'];
+    var currentFont = 0;
+
+    function changeFont() {
+        document.body.style.fontFamily = fonts[currentFont++ % fonts.length]
+    }
+
+    setInterval(changeFont, 1500);
+
+</script>
+
 </body>
 </html>
 

@@ -30,5 +30,8 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+#divisao h1 hover{
+    cursor: pointer;
+}
 
 
