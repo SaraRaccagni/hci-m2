@@ -1,6 +1,13 @@
-var mymap = L.map('mapid').setView([38.548920, -9.077550], 13);
+document.getElementsByTagName("body")[0].addEventListener("click", function(){
+    window.open(url);
+});
 
-L.tileLayer('https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=WdcTGuG5ljgDFUUE3uo3',{
+
+//definir visualização mapa
+var mymap = L.map('mapid').setView([40.196352, -8.404005], 13);
+
+// deifnir tile do mapa
+L.tileLayer('https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=WdcTGuG5ljgDFUUE3uo3', {
     attribution: '<a href="https://www.maptiler.com/copyright/" ' +
         'target="_blank">&copy; ' +
         'MapTiler</a> <a href="https://www.openstreetmap.org/copyright" ' +
@@ -8,65 +15,51 @@ L.tileLayer('https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=WdcTGuG5lj
         'OpenStreetMap contributors</a>',
 }).addTo(mymap);
 
+//ICON ÁRVORE
 var arvoreIcon = L.icon({
-    iconUrl: 'img/arvores.png',
+    iconUrl: 'img/arvore.png',
     iconSize: [50, 32]
 });
+var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap);
 
-var arvoreMarker = L.marker([40.2018,-8.4256], {icon: arvoreIcon}).addTo(mymap);
+//ICON ÁRVORE - choupal
+var arvore2Icon = L.icon({
+    iconUrl: 'img/arvore.png',
+    iconSize: [50, 32]
+});
+var arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvore2Icon}).addTo(mymap);
 
-/////////////////////////////////////////
-/*var data= JSON.parse(test);
+//ICON PARQUE
+var parqueIcon = L.icon({
+    iconUrl: 'img/parque.png',
+    iconSize: [50, 32]
+});
+var parqueMarker = L.marker([40.196352, -8.404005], {icon: parqueIcon}).addTo(mymap);
 
-L.geoJson("test.json").addTo(mymap);
+//ICON ESCOLA - JF
+var escolaIcon = L.icon({
+    iconUrl: 'img/escola.png',
+    iconSize: [50, 32]
+});
+var escolaMarker = L.marker([40.21184624848905, -8.413023670748354], {icon: escolaIcon}).addTo(mymap);
 
-//mouseover
-var geojson;
-// ... our listeners
-geojson = L.geoJson(statesData);
+//ICON BAR - Moelas
+var barIcon = L.icon({
+    iconUrl: 'img/bares.png',
+    iconSize: [50, 32]
+});
+var barMarker = L.marker([40.2088474055209, -8.427540734705197], {icon: barIcon}).addTo(mymap);
 
-function highlightFeature(e) {
-    var layer = e.target;
+//ICON PONTE - Europa
+var ponteIcon = L.icon({
+    iconUrl: 'img/ponte.png',
+    iconSize: [50, 32]
+});
+var ponteMarker = L.marker([40.19278254113339, -8.423536789259227], {icon: ponteIcon}).addTo(mymap);
 
-    info.update(layer.feature.properties);
-}
-
-function resetHighlight(e) {
-    info.update();
-}
-
-function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
-}
-
-function onEachFeature(feature, layer) {
-    layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight,
-        click: zoomToFeature
-    });
-}
-
-geojson = L.geoJson(data, {
-    onEachFeature: onEachFeature
-}).addTo(mymap);
-
-var info = L.control();
-
-
-info.onAdd = function (map) {
-    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-    this.update();
-    return this._div;
-};
-
-// method that we will use to update the control based on feature properties passed
-info.update = function (props) {
-    this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-        '<b>' + props.palavra + '</b><br />' + props.rep
-        : 'Hover over a state');
-};
-
-info.addTo(mymap);*/
-
-
+//ICON PONTE - Santa Clara
+var ponte2Icon = L.icon({
+    iconUrl: 'img/ponte.png',
+    iconSize: [50, 32]
+});
+var ponte2Marker = L.marker([40.205920345013766, -8.430720702793382], {icon: ponte2Icon}).addTo(mymap);

@@ -2,17 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anim.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anim_inicio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/saxxtext.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icones.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/cafe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/canoa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/cemiterio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/escola.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/estacionar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/estadio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/gym.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/histórico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/hospital.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/igreja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/pool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icones/restau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lottie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saxxtext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addWord.php" beforeDir="false" afterPath="$PROJECT_DIR$/addWord.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/equipa.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/equipa.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/geral.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/geral.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/projeto.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/projeto.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equipa.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Joana_sousa.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Joana_sousa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Laureano.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Laureano.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/arvore.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icones/arvore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/arvores.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bares.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icones/bares.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/coimbra.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/escola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/parque.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icones/parque.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ponte.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icones/ponte.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapa.js" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
     </list>
@@ -61,14 +88,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/icones" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +137,9 @@
       <workItem from="1621256580252" duration="1222000" />
       <workItem from="1621604585749" duration="8569000" />
       <workItem from="1621692755341" duration="10735000" />
-      <workItem from="1621761242748" duration="16523000" />
+      <workItem from="1621761242748" duration="26196000" />
+      <workItem from="1621794665306" duration="13000" />
+      <workItem from="1621794736840" duration="84000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -181,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621732273098</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="icones class style, testes zoom palavras">
+      <created>1621782996260</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621782996260</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +244,8 @@
     <MESSAGE value="script localizaçao" />
     <MESSAGE value="script localizaçao e detalhes css" />
     <MESSAGE value="words zoom a caminho , detalhes css" />
-    <option name="LAST_COMMIT_MESSAGE" value="words zoom a caminho , detalhes css" />
+    <MESSAGE value="icones class style, testes zoom palavras" />
+    <option name="LAST_COMMIT_MESSAGE" value="icones class style, testes zoom palavras" />
   </component>
   <component name="WindowStateProjectService">
     <state x="411" y="168" key="#CLI_Interpreters" timestamp="1621761886071">
@@ -228,10 +266,10 @@
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="416" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016482802" />
-    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621732272951">
+    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621782996076">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621732272951" />
+    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621782996076" />
     <state x="211" y="-870" key="CommitChangelistDialog2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573123131" />
     <state x="13" y="-997" key="CommitChangelistDialog2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718311825" />
     <state x="501" y="-597" key="NewPhpFileDialog" timestamp="1620573705873">
@@ -240,20 +278,21 @@
     <state x="501" y="-610" key="NewPhpFileDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016490202" />
     <state x="501" y="-597" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573705873" />
     <state x="587" y="377" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@0.23.1440.813" timestamp="1619865145064" />
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621732275261">
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621782998339">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621732275261" />
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621782998339" />
     <state x="204" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573125051" />
     <state x="7" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718321523" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-282.-1080.1920.1080@0.0.1440.900" timestamp="1619971762280" />
-    <state x="231" y="-827" key="search.everywhere.popup" timestamp="1619557989277">
-      <screen x="-282" y="-1057" width="1920" height="1057" />
+    <state x="385" y="196" key="search.everywhere.popup" timestamp="1621794808837">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900/-282.-1080.1920.1080@0.0.1440.900" timestamp="1619012239383" />
+    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621794808837" />
     <state x="231" y="-827" key="search.everywhere.popup/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1619557989277" />
   </component>
 </project>

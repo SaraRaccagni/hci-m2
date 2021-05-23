@@ -49,7 +49,7 @@ $fileContentsnovo = file_get_contents('words.txt');
         </div>
         <div class="menu-list">
             <ul>
-                <li><a href="index.php">Mapa</a></li>
+                <li><a href="mapa.php">Mapa</a></li>
                 <li><a href="projeto.html">Projeto</a></li>
                 <li><a href="equipa.html">A Equipa</a></li>
                 <li><a href="palavra.html">Inserir Palavra</a></li>
@@ -59,6 +59,7 @@ $fileContentsnovo = file_get_contents('words.txt');
 
 
 <script src="comp_tipo.js"></script>
+
 
 <script>
     var novaspalavras=<?php echo $fileContentsnovo ?>;
