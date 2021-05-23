@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addWord.php" beforeDir="false" afterPath="$PROJECT_DIR$/addWord.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/equipa.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/equipa.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/geral.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/geral.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/projeto.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/projeto.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equipa.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.html" afterDir="false" />
@@ -25,16 +27,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1qiwTuuxLOQlm2rCTz7LOonqtHI" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -69,7 +71,7 @@
       <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -107,6 +109,7 @@
       <workItem from="1621256580252" duration="1222000" />
       <workItem from="1621604585749" duration="8569000" />
       <workItem from="1621692755341" duration="10735000" />
+      <workItem from="1621761242748" duration="16523000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -171,11 +174,18 @@
       <option name="project" value="LOCAL" />
       <updated>1621718311960</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="words zoom a caminho , detalhes css">
+      <created>1621732273098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621732273098</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -196,17 +206,20 @@
     <MESSAGE value="alterei cenas index" />
     <MESSAGE value="script localizaçao" />
     <MESSAGE value="script localizaçao e detalhes css" />
-    <option name="LAST_COMMIT_MESSAGE" value="script localizaçao e detalhes css" />
+    <MESSAGE value="words zoom a caminho , detalhes css" />
+    <option name="LAST_COMMIT_MESSAGE" value="words zoom a caminho , detalhes css" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="266" y="-878" key="#CLI_Interpreters" timestamp="1619016581910">
-      <screen x="-282" y="-1080" width="1920" height="1080" />
+    <state x="411" y="168" key="#CLI_Interpreters" timestamp="1621761886071">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="266" y="-878" key="#CLI_Interpreters/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016581910" />
-    <state x="370" y="-890" key="#PHP" timestamp="1619016583189">
-      <screen x="-282" y="-1080" width="1920" height="1080" />
+    <state x="411" y="168" key="#CLI_Interpreters/0.0.1440.900@0.0.1440.900" timestamp="1621761886071" />
+    <state x="489" y="158" key="#PHP" timestamp="1621761889839">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="370" y="-890" key="#PHP/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016583189" />
+    <state x="489" y="158" key="#PHP/0.0.1440.900@0.0.1440.900" timestamp="1621761889839" />
     <state x="502" y="235" key="#Web_Browsers" timestamp="1619427879784">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -215,10 +228,10 @@
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="416" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016482802" />
-    <state x="13" y="-997" key="CommitChangelistDialog2" timestamp="1621718311825">
-      <screen x="-480" y="-1057" width="1920" height="1057" />
+    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621732272951">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621717146047" />
+    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621732272951" />
     <state x="211" y="-870" key="CommitChangelistDialog2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573123131" />
     <state x="13" y="-997" key="CommitChangelistDialog2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718311825" />
     <state x="501" y="-597" key="NewPhpFileDialog" timestamp="1620573705873">
@@ -227,10 +240,10 @@
     <state x="501" y="-610" key="NewPhpFileDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016490202" />
     <state x="501" y="-597" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573705873" />
     <state x="587" y="377" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@0.23.1440.813" timestamp="1619865145064" />
-    <state x="7" y="-706" key="Vcs.Push.Dialog.v2" timestamp="1621718321523">
-      <screen x="-480" y="-1057" width="1920" height="1057" />
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621732275261">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621717149202" />
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621732275261" />
     <state x="204" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573125051" />
     <state x="7" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718321523" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">

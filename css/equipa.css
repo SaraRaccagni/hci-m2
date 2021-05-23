@@ -16,7 +16,7 @@ section {
     align-content: center;
     padding:  0 10%;
 }
-a{
+/*a{
     color: #8D85D1;
     padding: 1% 2%;
     background-color: #ffffff;
@@ -25,7 +25,7 @@ a{
     border: none;
     transition: 0.3s;
     font-size:1.2rem;
-}
+}*/
 
 button{
     border: none;
@@ -50,7 +50,7 @@ img {
     object-fit: cover;
 }
 
-span {
+p {
     font-size: 30px;
     font-family: Roboto;
     color: white;

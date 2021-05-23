@@ -27,7 +27,7 @@ function compPalavras(palavras2) {
 //-----------------------------------------------------------------------
 
     //definir visualização mapa
-    var mymap = L.map('mapid').setView([40.196352, -8.404005], 13);
+    var mymap = L.map('mapid').setView([40.1932,-8.4051], 10);
 
     // deifnir tile do mapa
     L.tileLayer('https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=WdcTGuG5ljgDFUUE3uo3', {
@@ -38,59 +38,36 @@ function compPalavras(palavras2) {
             'OpenStreetMap contributors</a>',
     }).addTo(mymap);
 
+    var LeafIcon = L.Icon.extend({
+        options: {
+            iconSize: [50, 32]
+        }
+    });
+
     //ICON ÁRVORE
-    var arvoreIcon = L.icon({
-        iconUrl: 'img/arvore.png',
-        iconSize: [50, 32]
-    });
+
+    var arvoreIcon = new LeafIcon({iconUrl: 'img/arvore.png',}),
+        arvore2Icon = new LeafIcon({iconUrl: 'img/arvore.png',}),
+        parqueIcon= new LeafIcon({iconUrl: 'img/parque.png',}),
+        escolaIcon= new LeafIcon({iconUrl: 'img/escola.png',}),
+        barIcon= new LeafIcon({iconUrl: 'img/bares.png',}),
+        ponteIcon= new LeafIcon({iconUrl: 'img/ponte.png',}),
+        ponte2Icon= new LeafIcon({iconUrl: 'img/ponte.png',});
+
+
     var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap);
-
-    //ICON ÁRVORE - choupal
-    var arvore2Icon = L.icon({
-        iconUrl: 'img/arvore.png',
-        iconSize: [50, 32]
-    });
     var arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvore2Icon}).addTo(mymap);
-
-    //ICON PARQUE
-    var parqueIcon = L.icon({
-        iconUrl: 'img/parque.png',
-        iconSize: [50, 32]
-    });
     var parqueMarker = L.marker([40.196352, -8.404005], {icon: parqueIcon}).addTo(mymap);
-
-    //ICON ESCOLA - JF
-    var escolaIcon = L.icon({
-        iconUrl: 'img/escola.png',
-        iconSize: [50, 32]
-    });
     var escolaMarker = L.marker([40.21184624848905, -8.413023670748354], {icon: escolaIcon}).addTo(mymap);
-
-    //ICON BAR - Moelas
-    var barIcon = L.icon({
-        iconUrl: 'img/bares.png',
-        iconSize: [50, 32]
-    });
     var barMarker = L.marker([40.2088474055209, -8.427540734705197], {icon: barIcon}).addTo(mymap);
-
-    //ICON PONTE - Europa
-    var ponteIcon = L.icon({
-        iconUrl: 'img/ponte.png',
-        iconSize: [50, 32]
-    });
     var ponteMarker = L.marker([40.19278254113339, -8.423536789259227], {icon: ponteIcon}).addTo(mymap);
-
-    //ICON PONTE - Santa Clara
-    var ponte2Icon = L.icon({
-        iconUrl: 'img/ponte.png',
-        iconSize: [50, 32]
-    });
     var ponte2Marker = L.marker([40.205920345013766, -8.430720702793382], {icon: ponte2Icon}).addTo(mymap);
 
 
     //MARKERS
 
     L.geoJson(palavras2).addTo(mymap);
+
     var composicao_cont = document.getElementById("divisao");
 
     var layerGroup = L.geoJSON(palavras2, {
@@ -103,26 +80,45 @@ function compPalavras(palavras2) {
 
             mymap.on('zoomend', function() {
 
+                var map_coord= mymap.getBounds();
 
-                console.log(mymap.getBounds());
+                var lat1_map = map_coord._northEast.lat;
+                var long1_map = map_coord._northEast.long;
+
+                var lat2_map = map_coord._southWest.lat;
+                var long2_map = map_coord._southWest.long;
+
+                var long_pal= feature.properties.palavra + coordinates[0];
+                var lat_pal= feature.properties.palavra + coordinates[1];
 
                 var h1_word= document.createElement('h1');
                 composicao_cont.appendChild(h1_word);
 
-                if (mymap.getBounds().contains(coordinates)){
-                    console.log("dentro")
+                console.log(map_coord);
+                console.log(coordinates + feature.properties.palavra);
 
-                    console.log(coordinates);
-                    h1_word.innerHTML = feature.properties.palavra;
+                if (lat1_map<lat_pal< lat2_map) {
+                    console.log("lat dentro");
+                    console.log(lat_pal)
+                    //h1_word.innerHTML = feature.properties.palavra;
+                }
+                else if(long1_map< long_pal< long2_map){
+                    console.log("long dentro");
                 }
 
-                else {console.log("fora")
+                //else if (lat_pal< lat1_map || lat_pal>lat2_map && long_pal< long1_map || long_pal>long2_map)
+                else
+                {
+                    console.log("fora");
                     h1_word.innerHTML = ".";
-                }
 
+                }
             });
 
+
+
         }
+
     }).addTo(mymap);
 
 

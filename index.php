@@ -37,17 +37,18 @@ $fileContentsnovo = file_get_contents('words.txt');
 </div>
 
     <div class="nav-menu">
+        <div id="burger-wrap">
+            <a class="burger"><span></span></a>
+        </div>
         <div class="menu-list">
             <ul>
+                <li><a href="index.php">Mapa</a></li>
                 <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="equipa.html">A Equipa</a></li>
                 <li><a href="palavra.html">Inserir Palavra</a></li>
             </ul>
         </div>
-        <div id="burger-wrap">
-            <a class="burger"><span></span></a>
-        </div>
+
     </div>
 
 
@@ -61,17 +62,9 @@ $fileContentsnovo = file_get_contents('words.txt');
 </script>
 
 <script src="mapa.js"></script>
+<script src="menu.js"></script>
 
-<script>
-    $('document').ready(function() {
 
-        $('.burger').click(function() {
-            $('.nav-menu').toggleClass("open");
-            $('.menu-list').toggleClass("list-open");
-        });
-
-    });
-</script>
 
 
 

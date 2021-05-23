@@ -5,31 +5,54 @@
     <title>Projeto</title>
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/projeto.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-<div id="intro">
 
-    <div>
-        <h1>Balada <br> tipográfica</h1>
 
-        <p>A cidade oferece aos seus cidadãos as paisagens e sensações. <br>
+<div >
+    <div class="nav-menu">
+
+        <div id="burger-wrap">
+            <a class="burger"><span></span></a>
+        </div>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="index.php">Mapa</a></li>
+                <li><a href="projeto.html">Projeto</a></li>
+                <li><a href="equipa.html">A Equipa</a></li>
+                <li><a href="palavra.html">Inserir Palavra</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div id="intro">
+        <div id="text">
+            <h1>Balada <br> tipográfica</h1>
+            <p>A cidade oferece aos seus cidadãos as paisagens e sensações. <br>
             Através do nosso projeto, os cidadãos poderão oferecer aos visitantes de Coimbra uma descrição do que sentem
             quando
             estão em determinados locais,
             para que os mesmos, consigam sentir a cidade antes de a visitar, podendo personalizar a sua visita, face ao
             ambiente que pretenderão sentir.</p>
+        </div>
 
-        <a href="index.php">
-            <button> Voltar</button>
-        </a>
+        <div id="img">
+            <img src="img/coimbra.jpeg" id="coimbra_ft">
+
+        </div>
 
 
     </div>
 
-    <img src="img/coimbra.jpeg" id="coimbra_ft">
 
 </div>
+<script src="menu.js"></script>
 
 </body>
 

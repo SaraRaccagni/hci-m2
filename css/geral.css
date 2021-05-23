@@ -2,6 +2,10 @@
     margin:0;
     padding: 0;
 }
+body{
+    overflow-y: hidden;
+
+}
 @font-face {
     font-family: Roboto-Medium;
     src: url('../fonts/Roboto-Medium.ttf');
@@ -24,4 +28,170 @@ p, button, input{
 }
 a{
     text-decoration: none;
+}
+
+
+
+/* menu */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+a {
+    cursor: pointer;
+}
+
+.nav-menu {
+    background: none;
+    width: 60px;
+    height: 80px;
+    top: 0;
+    right: 15px;
+    -webkit-transition: width 0.2s ease, height 0.4s ease;
+    -moz-transition: width 0.2s ease, height 0.4s ease;
+    -o-transition: width 0.2s ease, height 0.4s ease;
+    transition: width 0.2s ease, height 0.4s ease;
+}
+.open {
+    position: fixed;
+    background: #685EAC;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.menu-list {
+    margin-top: 100px;
+    text-align: center;
+    font-family: Roboto-Medium;
+    text-transform: uppercase;
+    font-size: 50px;
+    opacity: 0;
+    color:#ffffff;
+}
+.list-open {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.64s ease;
+    -webkit-transition-delay: 0.34s;
+    -moz-transition-delay: 0.34s;
+    -o-transition-delay: 0.34s;
+    transition-delay: 0.34s;
+}
+.menu-list li {
+    padding: 10px;
+    background: none;
+    transition: 1s ;
+}
+.menu-list a{
+    color: #fff;
+
+}
+.menu-list li:hover {
+    background: #fff;
+    cursor: pointer;
+    transition: 1s ;
+}
+.menu-list li:hover a{
+    color: #685EAC;
+
+}
+
+/**** MENU ****/
+
+#burger-wrap {
+    position: fixed;
+    top: 0;
+    right: 15px;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 80px;
+}
+.burger {
+    position: fixed;
+    top: 9px;
+    right: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background-color: transparent;
+}
+.burger span {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    right: 16px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 15px;
+    -webkit-transition: background 0.3s .3s;
+    transition: background 0.3s .3s;
+    -o-transition: background 0s 0s;
+    -webkit-transition-delay: 0.4s,0s;
+    transition-delay: 0.4s,0s;
+}
+.open .burger span {
+    background: 0 0 transparent;
+    transform: rotate(90deg);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -o-transition: all 0s ease;
+    -webkit-transition-delay: 0s,0s;
+    transition-delay: 0s,0s;
+}
+.burger span::after,
+.burger span::before {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    content: "";
+    border-radius: 5px;
+    -webkit-transition-duration: .3s,.3s;
+    transition-duration: .3s,.3s;
+    -webkit-transition-delay: 0.4s,0s;
+    transition-delay: 0.4s,0s;
+}
+.burger span::before {
+    top: -8px;
+    -webkit-transition-property: top,-webkit-transform;
+    transition-property: top,transform;
+}
+.burger span::after {
+    bottom: -8px;
+    -webkit-transition-property: bottom,-webkit-transform;
+    transition-property: bottom,transform;
+}
+
+.open .burger span::after,
+.open .burger span::before {
+    -webkit-transition-delay: 0s,.4s;
+    transition-delay: 0s,.4s;
+    background-color: #fafafa;
+}
+.open .burger span::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.open .burger span::after {
+    bottom: 1px; /* Fix for codepen, set to zero for normal use */
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }

@@ -1,5 +1,5 @@
 <?php
-header('Location:index.php');
+//header('Location:index.php');
 
 $string = file_get_contents('words.txt');
 //$latitude=40.19213;
@@ -8,12 +8,14 @@ $string = file_get_contents('words.txt');
 $palavras = json_decode($string);
 var_dump($palavras);
 echo "<br>"."<br>";
+
 if (isset($_POST['textdata'])) {
 
     $words_array = $palavras->features;
     $word_input = $_POST['textdata'];
-    $latitude = $_POST['latitude'];
-    $longitude = $_POST['longitude'];
+    $latitude = round($_POST['latitude'], 4);
+    echo "LATITUDE". $latitude;
+    $longitude = round($_POST['longitude'],4);
 
     $word_exists = false;
 
