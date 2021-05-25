@@ -39,36 +39,46 @@ function compPalavras(palavras2) {
             'OpenStreetMap contributors</a>',
     }).addTo(mymap);
 
-    var LeafIcon = L.Icon.extend({
+    var LeafIconV = L.Icon.extend({
+        options: {
+            iconSize: [40, 50]
+        }
+    });
+
+    var LeafIconH = L.Icon.extend({
+        options: {
+            iconSize: [50, 40]
+        }
+    });
+
+    var LeafIconQ = L.Icon.extend({
         options: {
             iconSize: [50, 50]
         }
     });
-    var arvoreIcon = new LeafIcon({iconUrl: 'img/icones/arvore.png',}),
-        arvore2Icon = new LeafIcon({iconUrl: 'img/icones/arvore.png',}),
-        parqueIcon = new LeafIcon({iconUrl: 'img/icones/parque.png',}),
-        escolaIcon = new LeafIcon({iconUrl: 'img/icones/escola.png',}),
-        barIcon = new LeafIcon({iconUrl: 'img/icones/bares.png',}),
-        ponteIcon = new LeafIcon({iconUrl: 'img/icones/ponte.png',}),
-        ponte2Icon = new LeafIcon({iconUrl: 'img/icones/ponte.png',});
-    estadioIcon = new LeafIcon({iconUrl: 'img/icones/estadio.png',});
-    estadio2Icon = new LeafIcon({iconUrl: 'img/icones/estadio.png',});
-    gymIcon = new LeafIcon({iconUrl: 'img/icones/gym.png',});
-    canoaIcon = new LeafIcon({iconUrl: 'img/icones/canoa.png',});
-    hospitalIcon = new LeafIcon({iconUrl: 'img/icones/hospital.png',});
-    restauIcon = new LeafIcon({iconUrl: 'img/icones/restau.png',});
-    cafeIcon = new LeafIcon({iconUrl: 'img/icones/cafe.png',});
-    igrejaIcon = new LeafIcon({iconUrl: 'img/icones/igreja.png',});
-    poolIcon = new LeafIcon({iconUrl: 'img/icones/pool.png',});
-    historicoIcon = new LeafIcon({iconUrl: 'img/icones/histórico.png',});
-    cemiterioIcon = new LeafIcon({iconUrl: 'img/icones/cemiterio.png',});
-    estacionarIcon = new LeafIcon({iconUrl: 'img/icones/estacionar.png',});
+
+    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5cyOCt2.png',}),
+        parqueIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/ANEairs.png',}),
+        escolaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/VGaU03e.png',}),
+        barIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/UrCPuqx.png',}),
+        ponteIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/Ndd8IkY.png',}),
+    estadioIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/ctL9Wsi.png',}),
+    gymIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/ksGTrnt.png',}),
+    canoaIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/j8Uv4C6.png',}),
+    hospitalIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/qdAT5Mv.png',}),
+    restauIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5qPvN2R.png',}),
+    cafeIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/hvdYR2F.png',}),
+    igrejaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/1Rp8Cdq.png',}),
+    poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/8t4DipY.png',}),
+    historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/e2caFb1.png',}),
+    cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/jKuO42T.png',}),
+    estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/Ev0f1ys.png',});
 
 //ICONES
     var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap); // parque verde
-    var arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvore2Icon}).addTo(mymap); // choupal
-    var arvore3Marker = L.marker([40.20564508678762, -8.420796772886058], {icon: arvore2Icon}).addTo(mymap); //Bôtanico
-    var arvore4Marker = L.marker([40.20939893994936, -8.41804052597108], {icon: arvore2Icon}).addTo(mymap); //Sereia
+    var arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvoreIcon}).addTo(mymap); // choupal
+    var arvore3Marker = L.marker([40.20564508678762, -8.420796772886058], {icon: arvoreIcon}).addTo(mymap); //Bôtanico
+    var arvore4Marker = L.marker([40.20939893994936, -8.41804052597108], {icon: arvoreIcon}).addTo(mymap); //Sereia
 
     var parqueMarker = L.marker([40.196352, -8.404005], {icon: parqueIcon}).addTo(mymap); // skate park
 
@@ -79,7 +89,7 @@ function compPalavras(palavras2) {
     var barMarker = L.marker([40.2088474055209, -8.427540734705197], {icon: barIcon}).addTo(mymap); //moelas
     var bar2Marker = L.marker([40.19467352425028, -8.432726192892693], {icon: barIcon}).addTo(mymap); //praxis
     var ponteMarker = L.marker([40.19278254113339, -8.423536789259227], {icon: ponteIcon}).addTo(mymap); //europa
-    var ponte2Marker = L.marker([40.205920345013766, -8.430720702793382], {icon: ponte2Icon}).addTo(mymap); // santa clara
+    var ponte2Marker = L.marker([40.205920345013766, -8.430720702793382], {icon: ponteIcon}).addTo(mymap); // santa clara
     var estadioMarker = L.marker([40.203343613511606, -8.408715376081693], {icon: estadioIcon}).addTo(mymap); //estadio
     var estadio2Marker = L.marker([40.20611084382039, -8.434258809782644], {icon: estadioIcon}).addTo(mymap); //universitario
     var gymMarker = L.marker([40.21235161471066, -8.417551978968467], {icon: gymIcon}).addTo(mymap); //phive

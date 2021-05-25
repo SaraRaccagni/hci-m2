@@ -2,13 +2,20 @@ body {
     background-color: #8D85D1;
     margin: 0;
 }
-
 #equipa {
-    height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 0 10%;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
 }
+#equipa div{
+    margin-left: 50px;
+}
+
+#equipa_img {
+padding: 20% 0;}
 
 .pessoa{
     padding: 0 3%;
@@ -17,15 +24,24 @@ body {
 
 .pessoa img{
     border-radius: 50%;
-    width: 100%;
+    width: 13vw;
+    height: auto;
     object-fit: cover;
 }
-
+.pessoa p {
+    text-align: center;
+}
+#equipa h1 {
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 50px;
+}
 
 p {
-    font-size: 30px;
-    font-family: Roboto;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    font-family: Roboto-Light;
+    font-size: 16px;
+    width: 60%;
+    color: #ffffff;
+    padding:  5% 0%;
 }

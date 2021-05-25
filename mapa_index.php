@@ -56,7 +56,7 @@ $fileContentsnovo = file_get_contents('words.txt');
 <script src="menu.js"></script>
 
 <script>
-    var fonts = ['times', 'verdana', 'arial', 'montserrat', 'quicksand', 'roboto', 'lato'];
+    var fonts = [ 'Verdana', 'Arial', 'montserrat', 'Courier New', 'roboto','Helvetica','Trebuchet MS','Georgia'];
     var currentFont = 0;
 
     function changeFont() {
