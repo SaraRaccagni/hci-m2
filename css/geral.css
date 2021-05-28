@@ -14,6 +14,13 @@ body{
     font-family: Roboto-Light;
     src: url('../fonts/Roboto-Light.ttf');
 }
+@font-face {
+    font-family:'LeagueMonoVariable';
+    src: url('../fonts/LeagueMonoVariable.ttf');
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+
+}
 
 h1{
     font-weight: bolder;

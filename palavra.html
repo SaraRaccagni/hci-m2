@@ -5,33 +5,40 @@
     <title>Inserir Palavra</title>
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/palavra.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
 <div id="add-word">
 
     <form action="addWord.php" method="post" id="form">
-        <h1>Insere uma palavra que associes a este local:</h1>
+        <h1>Insere uma palavra que associes <br>ao local onde te encontras:</h1>
         <input id="input" type="text" name="textdata"><br>
-        <input id="button" type="submit" name="submit">
-        <a href="index.php">
-            Voltar
-        </a>
+        <input id="button" type="submit" name="submit" value="Ver no mapa">
 
-
-
-        <textarea name="latitude" id="latitude">
-
-        </textarea>
-        <textarea name="longitude" id="longitude">
-
-        </textarea>
+        <textarea name="latitude" id="latitude"></textarea>
+        <textarea name="longitude" id="longitude"></textarea>
     </form>
 
 </div>
+<div class="nav-menu">
+    <div id="burger-wrap">
+        <a class="burger"><span></span></a>
+    </div>
 
+    <div class="menu-list">
+        <ul>
+            <li><a href="mapa_index.php">Mapa</a></li>
+            <li><a href="projeto.html">Projeto</a></li>
+            <li><a href="equipa.html">A Equipa</a></li>
+            <li><a href="palavra.html">Inserir Palavra</a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
+<script src="menu.js"></script>
+
 <script>
 
 window.onload=function getLocation() {
@@ -52,7 +59,5 @@ function showPosition(position) {
 
     document.getElementById("longitude").innerHTML = lat;
     document.getElementById("longitude").style.display = "none";
-
-
 }
 </script>

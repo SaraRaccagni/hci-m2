@@ -3,7 +3,6 @@ function compPalavras(palavras2) {
 //-----------------------------------------------------------------------
 //----------------------- COMPOSIÇÃO TIPOGRÁFICA -------------------------
 //------------------------------------------------------------------------
-
     var num_pal= palavras2.features.length;
     console.log (num_pal);
 
@@ -16,10 +15,7 @@ function compPalavras(palavras2) {
         //aceder coordenadas
         var coord = palavras2.features[i].geometry.coordinates[i];
 
-        max = (max < parseFloat(repe)) ? parseFloat(repe) : max;
-        var opacity = repe / max;
     }
-
     var composicao_cont = document.getElementById("divisao");
 
 //-----------------------------------------------------------------------
@@ -41,23 +37,23 @@ function compPalavras(palavras2) {
 
     var LeafIconV = L.Icon.extend({
         options: {
-            iconSize: [40, 50]
+            iconSize: [30, 40]
         }
     });
 
     var LeafIconH = L.Icon.extend({
         options: {
-            iconSize: [50, 40]
+            iconSize: [40, 30]
         }
     });
 
     var LeafIconQ = L.Icon.extend({
         options: {
-            iconSize: [50, 50]
+            iconSize: [40, 40]
         }
     });
 
-    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5cyOCt2.png',}),
+/*    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5cyOCt2.png',}),
         parqueIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/ANEairs.png',}),
         escolaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/VGaU03e.png',}),
         barIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/UrCPuqx.png',}),
@@ -72,10 +68,10 @@ function compPalavras(palavras2) {
     poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/8t4DipY.png',}),
     historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/e2caFb1.png',}),
     cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/jKuO42T.png',}),
-    estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/Ev0f1ys.png',});
+    estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/Ev0f1ys.png',});*/
 
 //ICONES
-    var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap); // parque verde
+    /*var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap); // parque verde
     var arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvoreIcon}).addTo(mymap); // choupal
     var arvore3Marker = L.marker([40.20564508678762, -8.420796772886058], {icon: arvoreIcon}).addTo(mymap); //Bôtanico
     var arvore4Marker = L.marker([40.20939893994936, -8.41804052597108], {icon: arvoreIcon}).addTo(mymap); //Sereia
@@ -125,48 +121,48 @@ function compPalavras(palavras2) {
     var cemiterio2Marker = L.marker([40.19780410889759, -8.43936168134966], {icon: cemiterioIcon}).addTo(mymap); //cemiterio santa clara
 
     var estacionarMarker = L.marker([40.21701770168006, -8.438902747138705], {icon: estacionarIcon}).addTo(mymap); //estacionamento
-
-
-    //MARKERS
-
+*/
     L.geoJson(palavras2).addTo(mymap);
 
     var layerGroup = L.geoJSON(palavras2, {
+        style: function(feature) {
+            return {color: '#8C85D2'};
+        },
+        pointToLayer: function(feature, latlng) {
+            return new L.CircleMarker(latlng, {radius: 5, fillOpacity: 0.85});
+        },
         onEachFeature: function (feature, layer) {
 
-            var coordinates = feature.geometry.coordinates;
-
-            //console.log(feature.properties.rep)
+            //PALAVRAS
+            //OPACIDADE PALAVRAS
             var repe = feature.properties.rep;
 
             max = (max < parseFloat(repe)) ? parseFloat(repe) : max;
             var opacity = repe / max;
 
+            //ADICIONA PALAVRA
             var h1_word= document.createElement('h1');
             composicao_cont.appendChild(h1_word);
             h1_word.style.opacity = opacity;
             h1_word.innerHTML = feature.properties.palavra;
 
-            mymap.on('movestart', function() {
-                setAnimationSaxx ( 'h1' , 'saxx swing' ) ;
-
-            });
-
+            //ANIMAÇÕES
             setSaxxMouseEffect ( 'h1' , 'saxx swing') ;
-
-            var popup = L.popup().setContent('<h1>' + feature.properties.palavra + '</h1>');
-            layer.bindPopup(popup).openPopup();
-
-
-
-            h1_word.addEventListener("click", function(){
-                layer.bindPopup(popup).openPopup();
-
-
-
+            mymap.on('zoomend', function() {
+                setAnimationSaxx ( 'h1' , 'saxx swing' );
             });
 
+            //CLICK PALAVRA SHOW MARKER
+            h1_word.addEventListener("click", function(){
+                layer.bindPopup('<h2>' + feature.properties.palavra + '</h2>').openPopup();
+            });
 
+            // ZOOM E CENTRA MARKER QD SE CLICA
+            mymap.on('popupopen', function(centerMarker) {
+                var cM = mymap.project(centerMarker.popup._latlng);
+                cM.y -= centerMarker.popup._container.clientHeight/2
+                mymap.setView(mymap.unproject(cM),16, {animate: true});
+            });
 
         }
 

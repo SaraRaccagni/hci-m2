@@ -19,15 +19,15 @@ $fileContentsnovo = file_get_contents('words.txt');
 <body>
 
 <div id="intro">
+
     <div id="mapid"></div>
 
-    <div id="welcome">
-<!--        <h1>Balada tipográfica</h1>-->
+    <div id="pal">
         <div id="divisao">
-
 
         </div>
     </div>
+
 </div>
 
     <div class="nav-menu">
@@ -57,13 +57,17 @@ $fileContentsnovo = file_get_contents('words.txt');
 
 <script>
     var fonts = [ 'Verdana', 'Arial', 'montserrat', 'Courier New', 'roboto','Helvetica','Trebuchet MS','Georgia'];
+    var fonts_stretch= ['50%', '62.5%', '75%', '85.5%', '100%', '125%']
     var currentFont = 0;
 
-    function changeFont() {
-        document.body.style.fontFamily = fonts[currentFont++ % fonts.length]
-    }
 
-    setInterval(changeFont, 1500);
+
+    function changeFont() {
+        //document.body.style.fontFamily = fonts[currentFont++ % fonts.length]
+        //document.getElementById("divisao").style.fontStretch = fonts_stretch[currentFont++ % fonts_stretch.length]
+
+    }
+    //setInterval(changeFont, 3000);
 
 </script>
 

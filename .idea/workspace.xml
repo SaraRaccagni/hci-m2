@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fonts/LeagueMonoVariable.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/equipa.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/equipa.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/geral.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/geral.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/palavra.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/palavra.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipa.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/arvore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/bares.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/cafe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/canoa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/cemiterio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/escola.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/estacionar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/estadio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/gym.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/histórico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/hospital.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/igreja.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/parque.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/ponte.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/pool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icones/restau.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapa_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,15 +58,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/img/icones" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -128,7 +115,12 @@
       <workItem from="1621797839022" duration="1943000" />
       <workItem from="1621799815225" duration="59000" />
       <workItem from="1621802293027" duration="2800000" />
-      <workItem from="1621940126658" duration="4119000" />
+      <workItem from="1621940126658" duration="4263000" />
+      <workItem from="1621956182514" duration="1195000" />
+      <workItem from="1621957522305" duration="536000" />
+      <workItem from="1622042296261" duration="1000" />
+      <workItem from="1622122791941" duration="1647000" />
+      <workItem from="1622189789449" duration="10353000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -221,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621799851406</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="icons mais leves, css equipa">
+      <created>1621944485157</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1621944485157</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +249,8 @@
     <MESSAGE value="icones class style, testes zoom palavras" />
     <MESSAGE value="mais icones fts, interaçao palavras js, ++" />
     <MESSAGE value="tipografia muda, clica icones abre" />
-    <option name="LAST_COMMIT_MESSAGE" value="tipografia muda, clica icones abre" />
+    <MESSAGE value="icons mais leves, css equipa" />
+    <option name="LAST_COMMIT_MESSAGE" value="icons mais leves, css equipa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="411" y="168" key="#CLI_Interpreters" timestamp="1621761886071">
@@ -271,10 +271,10 @@
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="416" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016482802" />
-    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621799851220">
+    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621944484906">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621799851220" />
+    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944484906" />
     <state x="211" y="-870" key="CommitChangelistDialog2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573123131" />
     <state x="13" y="-997" key="CommitChangelistDialog2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718311825" />
     <state x="501" y="-597" key="NewPhpFileDialog" timestamp="1620573705873">
@@ -283,10 +283,10 @@
     <state x="501" y="-610" key="NewPhpFileDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016490202" />
     <state x="501" y="-597" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573705873" />
     <state x="587" y="377" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@0.23.1440.813" timestamp="1619865145064" />
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621799853558">
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621944488789">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621799853558" />
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944488789" />
     <state x="204" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573125051" />
     <state x="7" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718321523" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">

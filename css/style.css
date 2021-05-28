@@ -6,31 +6,32 @@
 
 #mapid {
     height: 100%;
-    width:50%; }
-
-#welcome{
-    background-color: var(--purple);
-    height: 100%;
     width:50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-#welcome h1{
-    color: white;
-    text-transform: uppercase;
-    font-size: 3rem;
-    padding: 1%;
+#pal{
+    background-color: var(--purple);
+    width:50%;
 }
 
 #divisao{
-    padding: 3% 6%;
+    font-family: Roboto;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 3% 6%;
+
 }
-#divisao h1 hover{
+
+#divisao h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vw;
+    padding: 1%;
+}
+
+#divisao h1 :hover{
     cursor: pointer;
 }
 

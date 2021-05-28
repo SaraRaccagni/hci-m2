@@ -26,9 +26,10 @@
     border-color: var(--purple);
     font-size: 1rem;
     padding: 1% 4%;
-    margin: 3% 0;
     text-align: center;
+    margin:3% 0;
 }
+
 #button{
     width: 50%;
     color: white;
@@ -40,22 +41,15 @@
     border: none;
     transition: 0.3s;
 }
+textarea{
+    display: none;
+}
+.burger span {
+    background: var(--purple);
+}
+.burger span::after,
+.burger span::before {
 
-a{
-    color: white;
-    padding: 1% 2%;
-    background-color: var(--purple);
-    box-shadow: inset -7px -10px 7px rgba(104, 94, 172, 0.3);
-    border-radius: 60px;
-    font-size: 1rem;
-    border: none;
-    transition: 0.3s;
-    text-align: center;
-    margin-top: 30px;
+    background: var(--purple);
 }
 
- a:hover, #button:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #8C85D2;
-
-}
