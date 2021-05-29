@@ -56,7 +56,7 @@ function compPalavras(palavras2, coimbra) {
         }
     });
 
-    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/QgNwukT.png',}), //
+    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/IWGhvR6.png',}), //
         parqueIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/k5y5e8g.png',}),
         escolaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/w4dXZz2.png',}),
         barIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/SFczePp.png',}),
