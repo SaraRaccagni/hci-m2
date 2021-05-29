@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/LeagueMonoVariable.ttf" afterDir="false" />
+    <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="icons mais leves, css equipa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/geral.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/geral.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/palavra.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/palavra.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapa_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,10 +262,11 @@
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="416" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016482802" />
-    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621944484906">
+    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1622285720088">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944484906" />
+    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1622285720088" />
     <state x="211" y="-870" key="CommitChangelistDialog2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573123131" />
     <state x="13" y="-997" key="CommitChangelistDialog2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718311825" />
     <state x="501" y="-597" key="NewPhpFileDialog" timestamp="1620573705873">
@@ -289,6 +281,10 @@
     <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944488789" />
     <state x="204" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573125051" />
     <state x="7" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718321523" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1622285712801">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1622285712801" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
