@@ -35,4 +35,8 @@
     cursor: pointer;
 }
 
+.leaflet-marker-icon{
+    display:none;
+}
+
 

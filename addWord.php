@@ -29,6 +29,7 @@ if (isset($_POST['textdata'])) {
             $rep += 1;
             echo "REPETIDO" . " - " . $words_properties->palavra . $rep . "<br/>";
             $words_properties->rep = $rep;
+
             break;
         }
 
