@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27f07b28-bc9c-4f66-8f2d-1eeed4467fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/escola.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/geral.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/geral.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/projeto.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/projeto.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipa.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapa_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
