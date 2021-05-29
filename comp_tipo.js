@@ -124,10 +124,13 @@ function compPalavras(palavras2) {
 */
     L.geoJson(palavras2).addTo(mymap);
 
+
+
     var layerGroup = L.geoJSON(palavras2, {
         style: function(feature) {
             return {color: '#8C85D2'};
         },
+
         pointToLayer: function(feature, latlng) {
             return new L.CircleMarker(latlng, {radius: 5, fillOpacity: 0.85});
         },
