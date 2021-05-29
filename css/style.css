@@ -1,16 +1,18 @@
 #intro{
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: grid;
+    grid: 1fr/ 1fr 1fr;
 }
 
 #mapid {
     height: 100%;
-    width:50%;
+    width:100%;
 }
+
 #pal{
     background-color: var(--purple);
-    width:50%;
+    width:100%;
 }
 
 #divisao{
@@ -39,4 +41,18 @@
     display:none;
 }
 
+@media only screen and (max-width: 600px) {
+    #intro{
+        grid: 1fr 1fr/ 1fr;
+    }
+
+    #divisao h1{
+        font-size: 16px;
+    }
+
+    .burger span, .burger span::before, .burger span::after{
+    background: #8D85D1;
+    }
+
+    }
 

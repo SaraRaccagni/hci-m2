@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="icons mais leves, css equipa">
+    <list default="true" id="27f07b28-bc9c-4f66-8f2d-1eeed4467fd0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/escola.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/geral.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/geral.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/projeto.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/projeto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipa.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapa_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,7 +21,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,18 +63,28 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fonts" />
-      <recent name="$PROJECT_DIR$/img/icones" />
+      <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -99,19 +122,7 @@
       <workItem from="1621256580252" duration="1222000" />
       <workItem from="1621604585749" duration="8569000" />
       <workItem from="1621692755341" duration="10735000" />
-      <workItem from="1621761242748" duration="26196000" />
-      <workItem from="1621794665306" duration="13000" />
-      <workItem from="1621794736840" duration="84000" />
-      <workItem from="1621795197537" duration="2613000" />
-      <workItem from="1621797839022" duration="1943000" />
-      <workItem from="1621799815225" duration="59000" />
-      <workItem from="1621802293027" duration="2800000" />
-      <workItem from="1621940126658" duration="4263000" />
-      <workItem from="1621956182514" duration="1195000" />
-      <workItem from="1621957522305" duration="536000" />
-      <workItem from="1622042296261" duration="1000" />
-      <workItem from="1622122791941" duration="1647000" />
-      <workItem from="1622189789449" duration="10353000" />
+      <workItem from="1621761242748" duration="16523000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -183,35 +194,7 @@
       <option name="project" value="LOCAL" />
       <updated>1621732273098</updated>
     </task>
-    <task id="LOCAL-00011" summary="icones class style, testes zoom palavras">
-      <created>1621782996260</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1621782996260</updated>
-    </task>
-    <task id="LOCAL-00012" summary="mais icones fts, interaçao palavras js, ++">
-      <created>1621795277692</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1621795277692</updated>
-    </task>
-    <task id="LOCAL-00013" summary="tipografia muda, clica icones abre">
-      <created>1621799851406</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1621799851406</updated>
-    </task>
-    <task id="LOCAL-00014" summary="icons mais leves, css equipa">
-      <created>1621944485157</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1621944485157</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,12 +205,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nem sei" />
@@ -237,11 +221,7 @@
     <MESSAGE value="script localizaçao" />
     <MESSAGE value="script localizaçao e detalhes css" />
     <MESSAGE value="words zoom a caminho , detalhes css" />
-    <MESSAGE value="icones class style, testes zoom palavras" />
-    <MESSAGE value="mais icones fts, interaçao palavras js, ++" />
-    <MESSAGE value="tipografia muda, clica icones abre" />
-    <MESSAGE value="icons mais leves, css equipa" />
-    <option name="LAST_COMMIT_MESSAGE" value="icons mais leves, css equipa" />
+    <option name="LAST_COMMIT_MESSAGE" value="words zoom a caminho , detalhes css" />
   </component>
   <component name="WindowStateProjectService">
     <state x="411" y="168" key="#CLI_Interpreters" timestamp="1621761886071">
@@ -262,11 +242,10 @@
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="416" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016482802" />
-    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1622285720088">
+    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621732272951">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944484906" />
-    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1622285720088" />
+    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621732272951" />
     <state x="211" y="-870" key="CommitChangelistDialog2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573123131" />
     <state x="13" y="-997" key="CommitChangelistDialog2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718311825" />
     <state x="501" y="-597" key="NewPhpFileDialog" timestamp="1620573705873">
@@ -275,25 +254,20 @@
     <state x="501" y="-610" key="NewPhpFileDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016490202" />
     <state x="501" y="-597" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573705873" />
     <state x="587" y="377" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@0.23.1440.813" timestamp="1619865145064" />
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621944488789">
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621732275261">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944488789" />
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621732275261" />
     <state x="204" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573125051" />
     <state x="7" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718321523" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1622285712801">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1622285712801" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-282.-1080.1920.1080@0.0.1440.900" timestamp="1619971762280" />
-    <state x="385" y="196" key="search.everywhere.popup" timestamp="1621794808837">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="231" y="-827" key="search.everywhere.popup" timestamp="1619557989277">
+      <screen x="-282" y="-1057" width="1920" height="1057" />
     </state>
     <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900/-282.-1080.1920.1080@0.0.1440.900" timestamp="1619012239383" />
-    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621794808837" />
     <state x="231" y="-827" key="search.everywhere.popup/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1619557989277" />
   </component>
 </project>

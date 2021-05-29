@@ -56,22 +56,22 @@ function compPalavras(palavras2, coimbra) {
         }
     });
 
-    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5cyOCt2.png',}),
-        parqueIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/ANEairs.png',}),
-        escolaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/VGaU03e.png',}),
-        barIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/UrCPuqx.png',}),
-        ponteIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/Ndd8IkY.png',}),
-    estadioIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/ctL9Wsi.png',}),
-    gymIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/ksGTrnt.png',}),
-    canoaIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/j8Uv4C6.png',}),
-    hospitalIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/qdAT5Mv.png',}),
-    restauIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5qPvN2R.png',}),
-    cafeIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/hvdYR2F.png',}),
-    igrejaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/1Rp8Cdq.png',}),
-    poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/8t4DipY.png',}),
-    historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/e2caFb1.png',}),
-    cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/jKuO42T.png',}),
-    estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/Ev0f1ys.png',});
+    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/ZePk3nC.png',}),
+        parqueIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/AWfCuva.png',}),
+        escolaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/cuNeejh.png',}),
+        barIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/qRmG6El.png',}),
+        ponteIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/zcv8w2G.png',}),
+    estadioIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/mTenOsN.png',}),
+    gymIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/X60pUGW.png',}),
+    canoaIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/VoDVcEf.png',}),
+    hospitalIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/Nq7zL32.png',}),
+    restauIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/UhfQFNc.png',}),
+    cafeIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/FD88P5k.png',}),
+    igrejaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/WXZDGmx.png',}),
+    poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/onm3KCH.png',}),
+    historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/gm2d4cw.png',}),
+    cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/KWKkb5E.png',}),
+    estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/4WA7OAe.png',});
 
 //ICONES
     var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap); // parque verde

@@ -123,6 +123,7 @@ a {
     padding: 0;
     width: 60px;
     height: 80px;
+    z-index: 1000;
 }
 .burger {
     position: fixed;
@@ -210,4 +211,10 @@ a {
 }
 #anim{
     padding-bottom: 15%;
+}
+
+@media only screen and (max-width:600px) {
+    body{
+        overflow-y: visible;
+    }
 }
