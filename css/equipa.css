@@ -2,6 +2,7 @@ body {
     background-color: #8D85D1;
     margin: 0;
 }
+
 #equipa {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,27 +11,32 @@ body {
     width: 100vw;
     height: 100vh;
 }
-#equipa div{
-    margin-left: 50px;
+
+#equipa > div:first-child {
+    width: 60%;
+    margin: 0 auto;
 }
 
 #equipa_img {
-padding: 20% 0;}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
 
 .pessoa{
-    padding: 0 3%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.pessoa img{
+.pessoa img {
     border-radius: 50%;
     width: 13vw;
-    height: auto;
     object-fit: cover;
+    min-width: 150px;
 }
-.pessoa p {
-    text-align: center;
-}
+
 #equipa h1 {
     font-family: Roboto;
     text-transform: uppercase;
@@ -41,7 +47,21 @@ padding: 20% 0;}
 p {
     font-family: Roboto-Light;
     font-size: 16px;
-    width: 60%;
     color: #ffffff;
-    padding:  5% 0%;
+    padding: 5% 0%;
+}
+
+@media only screen and (max-width: 600px) {
+    #equipa{
+        grid: auto 1fr/ 1fr;
+        margin-top: 80px;
+    }
+
+    #equipa_img{
+        grid: 1fr 1fr 1fr/ 1fr;
+    }
+
+    #equipa > div:first-child {
+        width: 90%;
+    }
 }

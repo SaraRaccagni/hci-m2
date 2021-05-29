@@ -69,7 +69,7 @@ function compPalavras(palavras2, coimbra) {
     cafeIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/kOb35rJ.png',}),
     igrejaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/GKBevIy.png',}),
     poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/8avpud7.png',}), //
-    historicoIcon = new LeafIconH({iconUrl: '[img]https://i.imgur.com/jidFpbY.png',}), //
+    historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/jidFpbY.png',}), //
     cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/VOiFw7m.png',}), //
     estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/pGUFxst.png',});
 
