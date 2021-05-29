@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1093aaed-4d7c-43ec-b58c-6af8801692e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/LeagueMonoVariable.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp_tipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/comp_tipo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/geral.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/geral.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/palavra.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/palavra.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapa_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palavra.html" beforeDir="false" afterPath="$PROJECT_DIR$/palavra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coimbra.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +114,10 @@
       <workItem from="1621957522305" duration="536000" />
       <workItem from="1622042296261" duration="1000" />
       <workItem from="1622122791941" duration="1647000" />
-      <workItem from="1622189789449" duration="10353000" />
+      <workItem from="1622189789449" duration="10969000" />
+      <workItem from="1622212899693" duration="448000" />
+      <workItem from="1622279079928" duration="2921000" />
+      <workItem from="1622284944543" duration="423000" />
     </task>
     <task id="LOCAL-00001" summary="nem sei">
       <created>1620573123338</created>
@@ -220,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621944485157</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="testes em estilos de palavras, zoom marker done, estilo marker 50%">
+      <created>1622201914728</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622201914728</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +254,8 @@
     <MESSAGE value="mais icones fts, interaçao palavras js, ++" />
     <MESSAGE value="tipografia muda, clica icones abre" />
     <MESSAGE value="icons mais leves, css equipa" />
-    <option name="LAST_COMMIT_MESSAGE" value="icons mais leves, css equipa" />
+    <MESSAGE value="testes em estilos de palavras, zoom marker done, estilo marker 50%" />
+    <option name="LAST_COMMIT_MESSAGE" value="testes em estilos de palavras, zoom marker done, estilo marker 50%" />
   </component>
   <component name="WindowStateProjectService">
     <state x="411" y="168" key="#CLI_Interpreters" timestamp="1621761886071">
@@ -271,10 +276,10 @@
       <screen x="-282" y="-1080" width="1920" height="1080" />
     </state>
     <state x="416" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016482802" />
-    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1621944484906">
+    <state x="370" y="51" key="CommitChangelistDialog2" timestamp="1622201914541">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944484906" />
+    <state x="370" y="51" key="CommitChangelistDialog2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1622201914541" />
     <state x="211" y="-870" key="CommitChangelistDialog2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573123131" />
     <state x="13" y="-997" key="CommitChangelistDialog2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718311825" />
     <state x="501" y="-597" key="NewPhpFileDialog" timestamp="1620573705873">
@@ -283,21 +288,22 @@
     <state x="501" y="-610" key="NewPhpFileDialog/0.0.1440.900/-282.-1080.1920.1080@-282.-1080.1920.1080" timestamp="1619016490202" />
     <state x="501" y="-597" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573705873" />
     <state x="587" y="377" key="NewPhpFileDialog/0.23.1440.813/-282.-1057.1920.1057@0.23.1440.813" timestamp="1619865145064" />
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1621944488789">
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2" timestamp="1622201916517">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621944488789" />
+    <state x="365" y="299" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1622201916517" />
     <state x="204" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1620573125051" />
     <state x="7" y="-706" key="Vcs.Push.Dialog.v2/0.23.1440.877/-480.-1057.1920.1057@-480.-1057.1920.1057" timestamp="1621718321523" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619971762280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-282.-1080.1920.1080@0.0.1440.900" timestamp="1619971762280" />
-    <state x="385" y="196" key="search.everywhere.popup" timestamp="1621794808837">
+    <state x="385" y="196" key="search.everywhere.popup" timestamp="1622214539184">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900/-282.-1080.1920.1080@0.0.1440.900" timestamp="1619012239383" />
     <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900/-480.-1080.1920.1080@0.0.1440.900" timestamp="1621794808837" />
+    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1622214539184" />
     <state x="231" y="-827" key="search.everywhere.popup/0.23.1440.813/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1619557989277" />
   </component>
 </project>

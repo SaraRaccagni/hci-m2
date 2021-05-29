@@ -14,7 +14,8 @@
 
 </head>
 <?php
-$fileContentsnovo = file_get_contents('words.txt');
+$wordsNovo = file_get_contents('words.txt');
+$coimbra= file_get_contents('coimbra.txt')
 ?>
 <body>
 
@@ -47,9 +48,10 @@ $fileContentsnovo = file_get_contents('words.txt');
 <script src="comp_tipo.js"></script>
 
 <script>
-    var novaspalavras=<?php echo $fileContentsnovo ?>;
+    var novaspalavras=<?php echo $wordsNovo ?>;
+    var coimbra= <?php echo $coimbra ?>;
 
-    compPalavras(novaspalavras);
+    compPalavras(novaspalavras, coimbra);
 
 </script>
 
@@ -59,8 +61,6 @@ $fileContentsnovo = file_get_contents('words.txt');
     var fonts = [ 'Verdana', 'Arial', 'montserrat', 'Courier New', 'roboto','Helvetica','Trebuchet MS','Georgia'];
     var fonts_stretch= ['50%', '62.5%', '75%', '85.5%', '100%', '125%']
     var currentFont = 0;
-
-
 
     function changeFont() {
         //document.body.style.fontFamily = fonts[currentFont++ % fonts.length]

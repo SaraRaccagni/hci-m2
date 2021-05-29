@@ -1,10 +1,13 @@
-function compPalavras(palavras2) {
+
+
+function compPalavras(palavras2, coimbra) {
+
 
 //-----------------------------------------------------------------------
 //----------------------- COMPOSIÇÃO TIPOGRÁFICA -------------------------
 //------------------------------------------------------------------------
     var num_pal= palavras2.features.length;
-    console.log (num_pal);
+    console.log ("num pal:"+ num_pal);
 
     for (var i =0; i<num_pal; i++) {
         var max = 0;
@@ -53,7 +56,7 @@ function compPalavras(palavras2) {
         }
     });
 
-/*    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5cyOCt2.png',}),
+    var arvoreIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/5cyOCt2.png',}),
         parqueIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/ANEairs.png',}),
         escolaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/VGaU03e.png',}),
         barIcon = new LeafIconV({iconUrl: 'https://i.imgur.com/UrCPuqx.png',}),
@@ -68,10 +71,10 @@ function compPalavras(palavras2) {
     poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/8t4DipY.png',}),
     historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/e2caFb1.png',}),
     cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/jKuO42T.png',}),
-    estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/Ev0f1ys.png',});*/
+    estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/Ev0f1ys.png',});
 
 //ICONES
-    /*var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap); // parque verde
+    var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).addTo(mymap); // parque verde
     var arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvoreIcon}).addTo(mymap); // choupal
     var arvore3Marker = L.marker([40.20564508678762, -8.420796772886058], {icon: arvoreIcon}).addTo(mymap); //Bôtanico
     var arvore4Marker = L.marker([40.20939893994936, -8.41804052597108], {icon: arvoreIcon}).addTo(mymap); //Sereia
@@ -121,12 +124,23 @@ function compPalavras(palavras2) {
     var cemiterio2Marker = L.marker([40.19780410889759, -8.43936168134966], {icon: cemiterioIcon}).addTo(mymap); //cemiterio santa clara
 
     var estacionarMarker = L.marker([40.21701770168006, -8.438902747138705], {icon: estacionarIcon}).addTo(mymap); //estacionamento
-*/
-    L.geoJson(palavras2).addTo(mymap);
+
+
+    var coimbra= L.geoJSON(coimbra,{
+        style: function(feature) {
+            return{
+            weight: 2,
+            opacity: 1,
+            color: '#94A2FD',
+            dashArray: '3',
+            fillOpacity: 0  }
+        }
+
+    }).addTo(mymap);
 
     var layerGroup = L.geoJSON(palavras2, {
         style: function(feature) {
-            return {color: '#8C85D2'};
+            return {color: '#94A2FD'};
         },
         pointToLayer: function(feature, latlng) {
             return new L.CircleMarker(latlng, {radius: 5, fillOpacity: 0.85});
@@ -156,6 +170,8 @@ function compPalavras(palavras2) {
             h1_word.addEventListener("click", function(){
                 layer.bindPopup('<h2>' + feature.properties.palavra + '</h2>').openPopup();
             });
+            var popup = L.popup().setContent('<h2>' + feature.properties.palavra + '</h2>');
+            layer.bindPopup(popup).openPopup();
 
             // ZOOM E CENTRA MARKER QD SE CLICA
             mymap.on('popupopen', function(centerMarker) {
@@ -167,9 +183,6 @@ function compPalavras(palavras2) {
         }
 
     }).addTo(mymap);
-
-
-
 
 
 }
