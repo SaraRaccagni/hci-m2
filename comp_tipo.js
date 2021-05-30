@@ -10,7 +10,7 @@ function compPalavras(palavras2) {
 //-----------------------------------------------------------------------
 
     //definir visualização mapa
-    var mymap = L.map('mapid').setView([40.1932,-8.4051], 10);
+    var mymap = L.map('mapid').setView([40.1932,-8.4051], 13);
 
     // deifnir tile do mapa
     L.tileLayer('https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=YXs4eleN4nyqgfQHZW1d', {
