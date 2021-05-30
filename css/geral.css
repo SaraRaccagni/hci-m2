@@ -48,7 +48,10 @@ input {
 a {
     text-decoration: none;
 }
-
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 
 /* menu */
@@ -239,5 +242,8 @@ a {
 @media only screen and (max-width:600px) {
     .open {
         width: 100%;
+    }
+    body{
+        overflow-y: scroll;
     }
 }

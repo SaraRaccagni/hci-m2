@@ -16,6 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
+
+
 </head>
 <?php
 $wordsNovo = file_get_contents('words.txt');
@@ -67,13 +69,15 @@ $coimbra= file_get_contents('coimbra.txt')
     var currentFont = 0;
 
     function changeFont() {
-        //document.body.style.fontFamily = fonts[currentFont++ % fonts.length]
+        document.body.style.fontFamily = fonts[currentFont++ % fonts.length]
         //document.getElementById("divisao").style.fontStretch = fonts_stretch[currentFont++ % fonts_stretch.length]
 
     }
-    //setInterval(changeFont, 3000);
-
+    setInterval(changeFont, 3000);
 </script>
+
+
+
 
 </body>
 </html>
