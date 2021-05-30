@@ -36,7 +36,7 @@ if (isset($_POST['textdata'])) {
     }
 //-----------------ACABA FOREACH------------------
 
-    if($word_input != $words_properties->palavra) {
+    if($word_input != $words_properties->palavra && $word_input!=='') {
         echo "NAO REPETIDO" . '<br>';
 
         $new_word = array(

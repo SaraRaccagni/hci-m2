@@ -1,21 +1,8 @@
-function compPalavras(palavras2, coimbra) {
+function compPalavras(palavras2) {
 
-//-----------------------------------------------------------------------
-//----------------------- COMPOSIÇÃO TIPOGRÁFICA -------------------------
-//------------------------------------------------------------------------
+
     var num_pal= palavras2.features.length;
     console.log ("num pal:"+ num_pal);
-
-    for (var i =0; i<num_pal; i++) {
-        var max = 0;
-        //aceder palavras
-        var words = palavras2.features[i].properties.palavra;
-        //aceder nº de repetições
-        var repe = palavras2.features[i].properties.rep;
-        //aceder coordenadas
-        var coord = palavras2.features[i].geometry.coordinates[i];
-
-    }
     var composicao_cont = document.getElementById("divisao");
 
 //-----------------------------------------------------------------------
@@ -57,7 +44,7 @@ function compPalavras(palavras2, coimbra) {
         poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/K0xix8v.png'}), historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/pVva45h.png'}),
         cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/TXNRFvP.png'}), estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/q6oyJ55.png'});
     //coordenadas
-    var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).bindPopup("Parque Verde"), // parque verde
+    var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).bindPopup("Parque Verde do Mondego"), // parque verde
         arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvoreIcon}).bindPopup("Choupal"), // choupal
         arvore3Marker = L.marker([40.20564508678762, -8.420796772886058], {icon: arvoreIcon}).bindPopup("Botânico"), //Bôtanico
         arvore4Marker = L.marker([40.20939893994936, -8.41804052597108], {icon: arvoreIcon}).bindPopup("Jardim da Sereia"), //Sereia
@@ -115,26 +102,21 @@ function compPalavras(palavras2, coimbra) {
     estadioMarker,estadio2Marker,gymMarker,gym2Marker,gym3Marker, canoaMarker,hospitalMarker, restauMarker, restau2Marker, restau3Marker, restau4Marker,restau5Marker,
     cafeMarker,cafe2Marker,cafe3Marker,cafe4Marker, igrejaMarker,igreja2Marker, poolMarker,pool2Marker, historicoMarker,historico2Marker,historico3Marker,historico4Marker,
     cemiterioMarker,cemiterio2Marker,estacionarMarker]).addTo(mymap);
+    var max = 0;
 
 
     var palavras = L.geoJSON(palavras2, {
-
         style: function(feature) {
             return {color: '#94A2FD'};
         },
 
         pointToLayer: function(feature, latlng) {
+            return new L.CircleMarker(latlng, {radius: 3, fillOpacity: 0.85});
 
-            var limitesMapa= mymap.getBounds();
-            mymap.on('zoomend', function() {
-                var limitesMapa= mymap.getBounds();
-            });
-
-            if (limitesMapa.contains(latlng)){
-             return new L.CircleMarker(latlng, {radius: 5, fillOpacity: 0.85});}
         },
 
         onEachFeature: function (feature, layer) {
+
 
         //PALAVRAS
             //OPACIDADE PALAVRAS
@@ -142,26 +124,37 @@ function compPalavras(palavras2, coimbra) {
             max = (max < parseFloat(repe)) ? parseFloat(repe) : max;
             var opacity = repe / max;
 
+            var word_cord_lat= feature.geometry.coordinates[1];
+            var word_cord_lng= feature.geometry.coordinates[0];
+            var word_cord= L.latLng(word_cord_lat, word_cord_lng)
+
+
             //ADICIONA PALAVRA
             var h1_word= document.createElement('h1');
+            h1_word.className='pal';
+            h1_word.id= feature.properties.palavra;
             composicao_cont.appendChild(h1_word);
             h1_word.style.opacity = opacity;
+            var pal= document.getElementById(feature.properties.palavra);
             h1_word.innerHTML = feature.properties.palavra;
 
 
-            //ANIMAÇÕES
-            //setSaxxMouseEffect ( 'h1' , 'saxx swing') ;
-            setSaxxMouseEffect ( 'h1' , 'saxx swing' , 'white' , '#28234E' ) ;
+            mymap.on('move', function() {
+                var bounds= mymap.getBounds();
 
-            mymap.on('zoomend', function() {
-                setAnimationSaxx ( 'h1' , 'saxx swing' );
-
+                if (mymap.getBounds().contains(word_cord)){
+                    pal.style.display= "inline-block";
+                }
+                else {
+                    pal.style.display= "none";
+                }
             });
 
             //CLICK PALAVRA SHOW MARKER
             h1_word.addEventListener("click", function(){
                 layer.bindPopup('<h2>' + feature.properties.palavra + '</h2>').openPopup();
             });
+
             var popup = L.popup().setContent('<h2>' + feature.properties.palavra + '</h2>');
             layer.bindPopup(popup).openPopup();
 
@@ -172,22 +165,21 @@ function compPalavras(palavras2, coimbra) {
                 mymap.setView(mymap.unproject(cM),16, {animate: true});
             });
 
+            //ANIMAÇÕES PALAVRAS
+            //setSaxxMouseEffect ( 'h1' , 'saxx swing') ;
+            setSaxxMouseEffect ( 'h1' , 'saxx swing' , 'white' , '#28234E' ) ;
+
+            mymap.on('zoomend', function() {
+                setAnimationSaxx ( 'h1' , 'saxx swing' );
+            });
+
         }
     });
 
 
-    var coimbra = L.geoJSON(coimbra,{
-        style: function(feature) {
-            return{
-                weight: 2,
-                opacity: 1,
-                color: '#94A2FD',
-                dashArray: '3',
-                fillOpacity: 0  }
-        }
-    });
+    var coimbraLayer = new L.LayerGroup([palavras]).addTo(mymap);
 
-    var coimbraLayer = new L.LayerGroup([coimbra,palavras]).addTo(mymap);
+
 
 
 

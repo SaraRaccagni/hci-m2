@@ -69,11 +69,11 @@ $coimbra= file_get_contents('coimbra.txt')
     var currentFont = 0;
 
     function changeFont() {
-        document.body.style.fontFamily = fonts[currentFont++ % fonts.length]
+        //document.body.style.fontFamily = fonts[currentFont++ % fonts.length]
         //document.getElementById("divisao").style.fontStretch = fonts_stretch[currentFont++ % fonts_stretch.length]
 
     }
-    setInterval(changeFont, 3000);
+    //setInterval(changeFont, 3000);
 </script>
 
 

@@ -16,13 +16,13 @@
 }
 
 #divisao{
-    font-family: Roboto;
     height: 100%;
+    font-family: Roboto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
-    align-items: stretch;
+    align-content: center;
+    align-items: center;
     padding: 3% 6%;
 }
 
@@ -30,14 +30,10 @@
     color: white;
     text-transform: uppercase;
     margin: 3%;
-    flex-grow: 1;
-/*    display:inline-block;
-    -webkit-transform:scale(1,2);
-    -moz-transform:scale(1,2);
-    -ms-transform:scale(1,2);
-    -o-transform:scale(1,2);
-    transform:scale(2,4);*/
+    display:inline-block;
+    object-fit: cover;
 }
+
 
 
 #divisao h1 :hover{
