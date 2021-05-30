@@ -34,10 +34,6 @@ input {
 #click {
     color: white;
     font-size: 1.4rem;
-    position: absolute;
-    padding-left:15%;
-
-
 }
 
 #click hover {
@@ -238,11 +234,8 @@ a {
     transform: rotate(-45deg);
 }
 
-#anim {
 
-    padding-bottom: 15%;
 
-}
 
 @media only screen and (max-width:600px) {
     .open {
@@ -251,4 +244,8 @@ a {
     body{
         overflow-y: scroll;
     }
+    .menu-list a {
+        font-size: 1.5rem;
+    }
+
 }

@@ -41,8 +41,8 @@ $coimbra= file_get_contents('coimbra.txt')
         </div>
         <div class="menu-list">
             <ul>
-                <li><a href="index.php">Mapa</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
+                <li><a href="mapa_index.php">Mapa</a></li>
+                <li><a href="projeto.html">Sobre</a></li>
                 <li><a href="equipa.html">A Equipa</a></li>
                 <li><a href="palavra.html">Inserir Palavra</a></li>
             </ul>
@@ -62,7 +62,7 @@ $coimbra= file_get_contents('coimbra.txt')
 <script src="menu.js"></script>
 
 <script>
-    var fonts = [ 'Verdana', 'Arial', 'montserrat', 'Courier New', 'roboto','Helvetica','Trebuchet MS','Georgia'];
+    //var fonts = [ 'Verdana', 'Arial', 'montserrat', 'Courier New', 'roboto','Helvetica','Trebuchet MS','Georgia'];
     var fonts_stretch= ['50%', '62.5%', '75%', '85.5%', '100%', '125%']
     var currentFont = 0;
 
