@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/saxxtext.min.css" />
 
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
     <script src="saxxtext.js"></script>
@@ -17,10 +16,12 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 </head>
+
 <?php
-$wordsNovo = file_get_contents('words.txt');
-$coimbra= file_get_contents('coimbra.txt')
+$wordsNovo = file_get_contents('words.txt');//New words
+$coimbra= file_get_contents('coimbra.txt'); //Coimbra Coordinates
 ?>
+
 <body>
 
 <div id="intro">
@@ -28,38 +29,35 @@ $coimbra= file_get_contents('coimbra.txt')
     <div id="mapid"></div>
 
     <div id="pal">
-        <div id="divisao">
-
-        </div>
+        <div id="divisao"></div>
     </div>
 
 </div>
 
-    <div class="nav-menu">
-        <div id="burger-wrap">
-            <a class="burger"><span></span></a>
-        </div>
-        <div class="menu-list">
-            <ul>
-                <li><a href="mapa_index.php">Mapa</a></li>
-                <li><a href="projeto.html">Sobre</a></li>
-                <li><a href="equipa.html">A Equipa</a></li>
-                <li><a href="palavra.html">Inserir Palavra</a></li>
-            </ul>
-        </div>
+<div class="nav-menu">
+    <div id="burger-wrap">
+        <a class="burger"><span></span></a>
     </div>
+    <div class="menu-list">
+        <ul>
+            <li><a href="mapa_index.php">Mapa</a></li>
+            <li><a href="projeto.html">Sobre</a></li>
+            <li><a href="equipa.html">A Equipa</a></li>
+            <li><a href="palavra.html">Inserir Palavra</a></li>
+        </ul>
+    </div>
+</div>
+<script src="menu.js"></script>
 
+<!--This two script works on all map functionalities: map, icons, words, zoom, click on a marker..-->
 <script src="comp_tipo.js"></script>
-
 <script>
     var novaspalavras=<?php echo $wordsNovo ?>;
     var coimbra= <?php echo $coimbra ?>;
 
-    compPalavras(novaspalavras, coimbra);
+    compPalavras(novaspalavras, coimbra);//This function is defined in "comp_tipo.js"
 
 </script>
-
-<script src="menu.js"></script>
 
 <script>
     //var fonts = [ 'Verdana', 'Arial', 'montserrat', 'Courier New', 'roboto','Helvetica','Trebuchet MS','Georgia'];
@@ -73,9 +71,6 @@ $coimbra= file_get_contents('coimbra.txt')
     }
     //setInterval(changeFont, 3000);
 </script>
-
-
-
 
 </body>
 </html>

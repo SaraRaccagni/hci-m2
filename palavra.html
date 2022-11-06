@@ -7,38 +7,42 @@
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/palavra.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
+
 <body>
-<div id="add-word">
 
-    <form action="addWord.php" method="post" id="form">
-        <h1>Insere uma palavra que associes <br>ao local onde te encontras:</h1>
-        <input id="input" type="text" name="textdata"><br>
-        <input id="button" type="submit" name="submit" value="Ver no mapa">
+    <div id="add-word">
 
-        <textarea name="latitude" id="latitude"></textarea>
-        <textarea name="longitude" id="longitude"></textarea>
-    </form>
+        <form action="addWord.php" method="post" id="form">
+            <h1>Insere uma palavra que associes <br>ao local onde te encontras:</h1>
+            <input id="input" type="text" name="textdata"><br>
+            <input id="button" type="submit" name="submit" value="Ver no mapa">
 
-</div>
-<div class="nav-menu">
-    <div id="burger-wrap">
-        <a class="burger"><span></span></a>
+            <textarea name="latitude" id="latitude"></textarea>
+            <textarea name="longitude" id="longitude"></textarea>
+        </form>
+
     </div>
 
-    <div class="menu-list">
-        <ul>
-            <li><a href="mapa_index.php">Mapa</a></li>
-            <li><a href="projeto.html">Sobre</a></li>
-            <li><a href="equipa.html">A Equipa</a></li>
-            <li><a href="palavra.html">Inserir Palavra</a></li>
-        </ul>
+    <div class="nav-menu">
+        <div id="burger-wrap">
+            <a class="burger"><span></span></a>
+        </div>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="mapa_index.php">Mapa</a></li>
+                <li><a href="projeto.html">Sobre</a></li>
+                <li><a href="equipa.html">A Equipa</a></li>
+                <li><a href="palavra.html">Inserir Palavra</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+    <script src="menu.js"></script>
+    
 </body>
 </html>
-<script src="menu.js"></script>
+
 
 <script>
 

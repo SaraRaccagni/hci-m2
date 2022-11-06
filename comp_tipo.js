@@ -9,10 +9,10 @@ function compPalavras(palavras2) {
 //------------------------------- MAPA ----------------------------------
 //-----------------------------------------------------------------------
 
-    //definir visualização mapa
+    //set map visualisation coordinates
     var mymap = L.map('mapid').setView([40.1932,-8.4051], 13);
 
-    // deifnir tile do mapa
+    // set map tile
     L.tileLayer('https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=YXs4eleN4nyqgfQHZW1d', {
         attribution: '<a href="<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>" ' +
             'target="_blank">&copy; ' +
@@ -20,8 +20,9 @@ function compPalavras(palavras2) {
             'target="_blank">&copy; ' +
             'OpenStreetMap contributors</a>',
     }).addTo(mymap);
+
 //ICONES
-//tamanho
+    //size/scale
     var LeafIconV = L.Icon.extend({
         options: {
             iconSize: [30, 40]
@@ -43,7 +44,7 @@ function compPalavras(palavras2) {
         cafeIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/fElx0LF.png'}), igrejaIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/Cnoxdft.png'}),
         poolIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/K0xix8v.png'}), historicoIcon = new LeafIconH({iconUrl: 'https://i.imgur.com/pVva45h.png'}),
         cemiterioIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/TXNRFvP.png'}), estacionarIcon = new LeafIconQ({iconUrl: 'https://i.imgur.com/q6oyJ55.png'});
-    //coordenadas
+    //coordenatas
     var arvoreMarker = L.marker([40.2018, -8.4256], {icon: arvoreIcon}).bindPopup("Parque Verde do Mondego"), // parque verde
         arvore2Marker = L.marker([40.22246974138522, -8.443942795743165], {icon: arvoreIcon}).bindPopup("Mata Nacional do Choupal"), // choupal
         arvore3Marker = L.marker([40.20564508678762, -8.420796772886058], {icon: arvoreIcon}).bindPopup("Botânico"), //Bôtanico
@@ -97,7 +98,7 @@ function compPalavras(palavras2) {
         cemiterio2Marker = L.marker([40.19780410889759, -8.43936168134966], {icon: cemiterioIcon}).bindPopup("Cemitério de Santa Clara"), //cemiterio santa clara
 
         estacionarMarker = L.marker([40.21701770168006, -8.438902747138705], {icon: estacionarIcon}).bindPopup("Estacionamento"); //estacionamento
-    //adicionar mapa
+    //add icones on the map
     var icones = L.layerGroup([ arvoreMarker,arvore2Marker,arvore3Marker,arvore4Marker,parqueMarker, escolaMarker,escola2Marker, escola3Marker,barMarker,bar2Marker,ponteMarker,ponte2Marker,
     estadioMarker,estadio2Marker,gymMarker,gym2Marker,gym3Marker, canoaMarker,hospitalMarker, restauMarker, restau2Marker, restau3Marker, restau4Marker,restau5Marker,
     cafeMarker,cafe2Marker,cafe3Marker,cafe4Marker, igrejaMarker,igreja2Marker, poolMarker,pool2Marker, historicoMarker,historico2Marker,historico3Marker,historico4Marker,
@@ -119,7 +120,7 @@ function compPalavras(palavras2) {
 
 
         //PALAVRAS
-            //OPACIDADE PALAVRAS
+            //OPACITY WORDS
             var repe = feature.properties.rep;
             max = (max < parseFloat(repe)) ? parseFloat(repe) : max;
             var opacity = repe / max;
@@ -129,7 +130,7 @@ function compPalavras(palavras2) {
             var word_cord= L.latLng(word_cord_lat, word_cord_lng)
 
 
-            //ADICIONA PALAVRA
+            //ADD WORD
             var h1_word= document.createElement('h1');
             h1_word.className='pal';
             h1_word.id= feature.properties.palavra;
@@ -150,7 +151,7 @@ function compPalavras(palavras2) {
                 }
             });
 
-            //CLICK PALAVRA SHOW MARKER
+            //CLICK WORD -> SHOW MARKER
             h1_word.addEventListener("click", function(){
                 layer.bindPopup('<h2>' + feature.properties.palavra + '</h2>').openPopup();
             });
@@ -158,14 +159,14 @@ function compPalavras(palavras2) {
             var popup = L.popup().setContent('<h2>' + feature.properties.palavra + '</h2>');
             layer.bindPopup(popup).openPopup();
 
-            // ZOOM E CENTRA MARKER QD SE CLICA
+            // ZOOM AND CENTER MARKER WHEN CLICKING
             mymap.on('popupopen', function(centerMarker) {
                 var cM = mymap.project(centerMarker.popup._latlng);
                 cM.y -= centerMarker.popup._container.clientHeight/2
                 mymap.setView(mymap.unproject(cM),16, {animate: true});
             });
 
-            //ANIMAÇÕES PALAVRAS
+            //WORD ANIMATIONS
             //setSaxxMouseEffect ( 'h1' , 'saxx swing') ;
             setSaxxMouseEffect ( 'h1' , 'saxx swing' , 'white' , '#28234E' ) ;
 

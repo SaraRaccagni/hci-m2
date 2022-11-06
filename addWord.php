@@ -34,7 +34,7 @@ if (isset($_POST['textdata'])) {
         }
 
     }
-//-----------------ACABA FOREACH------------------
+//-----------------END FOREACH------------------
 
     if($word_input != $words_properties->palavra && $word_input!=='') {
         echo "NAO REPETIDO" . '<br>';
@@ -61,11 +61,11 @@ echo "<br>"."PALAVRAS"."<br>";
 var_dump($palavras);
 echo "<br>"."<br>";
 
-//array de volta p json string
+//array back to json string
 $encodedString = json_encode( $palavras) . PHP_EOL;
 echo "<br>"."ENCODED: " ."<br>". $encodedString;
 
-//guardar ficheiro texto
+//save text file
 if (file_put_contents('words.txt', $encodedString)) echo 'Data successfully saved';
 else echo 'Unable to save data';
 
