@@ -37,7 +37,7 @@ function checkUserLog()
 }
 
 //VERIFICA CHE I CAMPI DELLA FORM DI REGISTRAZIONE NON SIANO VUOTI E CHE LO USERNAME NON ESISTO GIA'   
-function checkUserReg(users_array)
+function checkUserReg()
 {
     userName = $("#userNameReg");//recupero il riferimento al campo title (input con id=title) della form
     userName_msg = $("#invalid-userName");//è lo span in cui verrà inserito il messaggio d'errore (in editBookBotstrap)
@@ -104,6 +104,75 @@ function checkUserReg(users_array)
     }
 }
 
+function checkCreation()
+{
+    city = $("#city");//recupero il riferimento al campo title (input con id=title) della form
+    city_msg = $("#invalid-city");//è lo span in cui verrà inserito il messaggio d'errore (in editBookBotstrap)
+    
+    date= $("#date");
+    date_msg = $("#invalid-date");
+
+    hour= $("#hour");
+    minutes= $("#minutes");
+    time_msg = $("#invalid-time");
+
+
+    frame_hour= $("#frame-hour");
+    frame_minutes= $("#frame-minutes");
+    frame_msg = $("#invalid-time-frame");
+
+    km= $("#km");
+    meters= $("#meters");
+    range_msg = $("#invalid-space");
+
+    var regularExpressionName = new RegExp("^([a-zA-Z]+)$", "g");
+    var regularExpressionPhone = new RegExp("^([0-9]{10})$", "g");
+    error = false;
+    
+    city_msg.html("");
+    date_msg.html("");
+    time_msg.html("");
+    frame_msg.html("");
+    range_msg.html("");
+    //verifico che il titolo non sia vuoto, il trim toglie tuti gli spazi prima e dopo la stringa
+    //-> è un controllo per evitare che l'utente inserisca solo la stringa vuota
+    if (city.val().trim() === "")
+    {
+        city_msg.html("The City field must not be empty");//messaggio d'errore
+        city.focus();//sposta il cursore sul campo da non lasciar vuoto
+        error = true;
+    }else if(!city.val().trim().match(regularExpressionName))
+    {
+        city_msg.html("The City must only contains letters, no digits or special characters");//messaggio d'errore
+        city.focus();//sposta il cursore sul campo da non lasciar vuoto
+        error = true;
+    }else if(date.val().trim() === "")
+    {
+        date_msg.html("The Date field must not be empty");//messaggio d'errore
+        date.focus();//sposta il cursore sul campo da non lasciar vuoto
+        
+        error = true;
+    }else if(hour.val().trim() === "" || minutes.val().trim() === "")
+    {
+        time_msg.html("The Time field must not be empty");//messaggio d'errore
+        hour.focus();//sposta il cursore sul campo da non lasciar vuoto
+        error = true;
+    }else if(frame_hour.val().trim() === "" || frame_minutes.val().trim() === "")
+    {
+        frame_msg.html("The  Time frame must not be empty");//messaggio d'errore
+        frame_hour.focus();//sposta il cursore sul campo da non lasciar vuoto
+        error = true;
+    }else if(km.val().trim() === "" || meters.val().trim() === "")
+    {
+        range_msg.html("The Range frame field must not be empty");//messaggio d'errore
+        km.focus();//sposta il cursore sul campo da non lasciar vuoto
+        error = true;
+    }
+
+    if(!error){
+        $('form[name=newItinerary]').submit();//meglio on() o trigger()
+    }
+}
 
 
 

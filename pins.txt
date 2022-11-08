@@ -1,0 +1,53 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "owner": "Abracadabra",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.4052,
+                    40.1932
+                ]
+            },
+            "properties": {
+                "city": "Coimbra",
+                "category": "Sad",
+                "name": "Sad",
+                "color": "blue",
+                "description": "Same as before",
+                "comments": [
+                    {
+                        "username": "",
+                        "comment": ""
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "owner": "Fresco",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.4257,
+                    40.2019
+                ]
+            },
+            "properties": {
+                "city": "Coimbra",
+                "category": "Bar",
+                "name": "Bar",
+                "color": "yellow",
+                "description": "Same as before",
+                "comments": [
+                    {
+                        "username": "",
+                        "comment": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,14 +1,30 @@
 
 .navbar-default-top {
     height: 100px;
-    background-color: #d988c2;
+    background-color: #fdfcfd;
 }
 .navbar-default-bottom {
     height: 80px;
-    background-color: #d988c2;
+    background-color: #ffffff;
 }
 
-.navbar-brand-feed {
+.glyphicon-nav {
+    font-size: 30px;
+    margin-top: 25px;
+   
+  }
+
+.glyphicon-arrow-right {
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.feed {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* .navbar-brand-feed {
     display: inline-block;
     text-indent: -9999px;
     margin-top: 10px;
@@ -55,22 +71,24 @@
     height: 60px;
     background: url(../img/profile.jpg);
     background-size: contain;
-}
+} */
 
 .header-logo {
     margin-top: 5px;
-    border-bottom: 2px solid #b624a2;
+    border-bottom: 2px solid #d3dbf8;
 }
 
 body{
-    /* background: url(../img/photo-index.jpg) center center no-repeat; */
-    background-size: cover;
-    background-color: #f8ebf2;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: #d3dbf8;
 }
 
 
+
+/* STYLE FROM OLD PROJECT*/
 #intro{
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
     display: grid;
     grid: 1fr/ 1fr 1fr;

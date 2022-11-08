@@ -40,6 +40,9 @@ $new_user = array(
         'username' => $username_reg,
         'email' => $email_reg,
         'password' => md5($password_reg),
+        'age' => "",
+        'origin' => "",
+        'photo' => ""
     ));
 array_push($users_json->users, $new_user);
 

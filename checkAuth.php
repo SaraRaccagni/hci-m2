@@ -1,4 +1,6 @@
-<?php
+<?php 
+//start a session
+session_start();
 
 //Users saved in users.txt
 $string = file_get_contents('users.txt');

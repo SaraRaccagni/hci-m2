@@ -135,7 +135,7 @@ a {
     top: 0;
     right: 15px;
     margin: 0;
-    padding: 0;
+    padding: 100;
     width: 60px;
     height: 80px;
     z-index: 1000;
@@ -165,7 +165,7 @@ a {
     left: 16px;
     right: 16px;
     height: 3px;
-    background: #ffffff;
+    background: #7964d8;
     border-radius: 15px;
     -webkit-transition: background 0.3s .3s;
     transition: background 0.3s .3s;
