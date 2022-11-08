@@ -1,3 +1,74 @@
+
+.navbar-default-top {
+    height: 100px;
+    background-color: #d988c2;
+}
+.navbar-default-bottom {
+    height: 80px;
+    background-color: #d988c2;
+}
+
+.navbar-brand-feed {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/home.png);
+    background-size: contain;
+}
+
+.navbar-brand-map {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/map2.webp);
+    background-size: contain;
+}
+
+.navbar-brand-itinerary {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/itinerary.jpg);
+    background-size: contain;
+}
+
+.navbar-brand-profile {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/profile.jpg);
+    background-size: contain;
+}
+
+.header-logo {
+    margin-top: 5px;
+    border-bottom: 2px solid #b624a2;
+}
+
+body{
+    /* background: url(../img/photo-index.jpg) center center no-repeat; */
+    background-size: cover;
+    background-color: #f8ebf2;
+}
+
+
 #intro{
     width: 100vw;
     height: 100vh;
@@ -63,5 +134,9 @@
     background: #8D85D1;
     }
 
-    }
+}
+
+
+
+   
 
