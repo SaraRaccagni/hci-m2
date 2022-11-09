@@ -3,52 +3,73 @@
 //Pins saved in pins.txt
 $string = file_get_contents('pins.txt');
 $pins_json = json_decode($string);
-$pins_array = $pins_json->pins;
+$pins_array = $pins_json->features;
 
 //DA VEDERE COME FUNZIONANO I CONTROLLI SULLA CHECKBOX
 //New itnerary request
-$city = $_POST['city'];
-$checkbox=array("customCheck1","customCheck2","customCheck3","customCheck4","customCheck5","customCheck6");
+$checkbox1=array("customCheck1","customCheck2","customCheck3","customCheck4","customCheck5","customCheck6");
 $categories = array();
-foreach($checkbox as $box){
-    if ($_POST["$box"]==true)
-    array_push($categories, $_POST[$box]);
+foreach($checkbox1 as $box){
+    if (isset($_POST[$box])){
+        array_push($categories, $_POST[$box]);
+    }
 }
-console($categories);
 
-$new_itinerary=array(
-    'type' => 'Itinerary',
-    'pins' => array(
-));
+$checkbox2=array("customCheck7","customCheck8","customCheck9");
+foreach($checkbox2 as $box){
+    if (isset($_POST[$box])){
+        $compSett= $_POST[$box];
+    }
+}
+
+$pins=array();
 
 
-foreach ($pin_array as $pin) {
+foreach ($pins_array as $pin) {
     $pin_city = $pin->properties->city;
     $pin_category = $pin->properties->category;
 
-    if( $city == $pin_city){
+    if((strcasecmp($_POST['city'],$pin_city))== 0){
         foreach($categories as $category){
-            if($category == $pin_category){
-                $new_pin = array(
-                    'type' => 'Pin',
-                    'properties' => array(
-                        'city' => $pin_city,
-                        'category' => $pin_category,
-                    ));
-                array_push($new_itinerary->pins, $new_pin);
+            if((strcasecmp($category,$pin_category))== 0){
+                array_push($pins, $pin->id);
             }
         }
     
     }
 }
 
+$string = file_get_contents('itineraries.txt');
+$itineraries_json = json_decode($string);
+$newId=$itineraries_json->lastId+1;
+$itineraries_json->lastId=$newId;
+
+session_start();
+$new_itinerary=array(
+         'type' => 'Itinerary',
+         'id' => $newId,
+         'owner' => $_SESSION['loggedName'],
+         'city' => $_POST['city'],
+         'date' => $_POST['date'],
+         'hour' => $_POST['hour'],
+         'minutes' => $_POST['minutes'],
+         'frameHour' => $_POST['frame-hour'],
+         'frameMinutes' => $_POST['frame-minutes'],
+         'km' => $_POST['km'],
+         'meters' => $_POST['meters'],
+         'filters' => $categories,
+         'compSettings' => $compSett,
+         'pins' => $pins
+        );
+
+array_push($itineraries_json->itineraries, $new_itinerary);
 
 
 //array back to json string
-$encodedString = json_encode($new_itinerary) . PHP_EOL;
+$encodedString = json_encode($itineraries_json) . PHP_EOL;
 
 //save text file
-file_put_contents('./itinerary.txt', $encodedString);
+file_put_contents('./itineraries.txt', $encodedString);
 // header("Location:login.php?SuccessReg=" . urlencode('User successfully saved'));
 echo "<script type=\"text/javascript\">
             alert('Itinerary successfully saved');

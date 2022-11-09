@@ -3,6 +3,7 @@
     "features": [
         {
             "type": "Feature",
+            "id": "1",
             "owner": "Abracadabra",
             "geometry": {
                 "type": "Point",
@@ -14,19 +15,25 @@
             "properties": {
                 "city": "Coimbra",
                 "category": "Sad",
-                "name": "Sad",
+                "name": "Far from home",
                 "color": "blue",
-                "description": "Same as before",
+                "description": "When you cry so much, it makes you realize that breathing is hard.” “Long time I been on my own, but now really I'm alone. I survive the killing, the starving, all the hate of the Khmer Rouge, but I think maybe now I will die of this, of broken heart.” “I don't know if it's possible to take hate away from people.",
                 "comments": [
                     {
                         "username": "",
                         "comment": ""
                     }
+                ],
+                "likes": "3",
+                "photos": [
+                    "img/sad.jpg"
                 ]
+
             }
         },
         {
             "type": "Feature",
+            "id": "2",
             "owner": "Fresco",
             "geometry": {
                 "type": "Point",
@@ -37,15 +44,77 @@
             },
             "properties": {
                 "city": "Coimbra",
-                "category": "Bar",
-                "name": "Bar",
+                "category": "Bars",
+                "name": "Crazy night",
                 "color": "yellow",
-                "description": "Same as before",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida est suscipit, aliquet nisi eu, aliquet ante. Phasellus commodo id lectus eget vestibulum. Integer vestibulum, elit at porttitor pulvinar, nibh mi faucibus nisl, eu finibus magna lorem in leo. ",
                 "comments": [
                     {
                         "username": "",
                         "comment": ""
                     }
+                ],
+                "likes": "7",
+                "photos": [
+                    "img/bars.jpg"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "3",
+            "owner": "Fresco",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.4255,
+                    40.2040
+                ]
+            },
+            "properties": {
+                "city": "Coimbra",
+                "category": "Bars",
+                "name": "First shot",
+                "color": "yellow",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida est suscipit, aliquet nisi eu, aliquet ante. Phasellus commodo id lectus eget vestibulum. Integer vestibulum, elit at porttitor pulvinar, nibh mi faucibus nisl, eu finibus magna lorem in leo. ",
+                "comments": [
+                    {
+                        "username": "",
+                        "comment": ""
+                    }
+                ],
+                "likes": "12",
+                "photos": [
+                    "img/bars.jpg"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "4",
+            "owner": "Saretta",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.4155,
+                    40.1900
+                ]
+            },
+            "properties": {
+                "city": "Coimbra",
+                "category": "Academic-Life",
+                "name": "1st day as Erasmus student",
+                "color": "red",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida est suscipit, aliquet nisi eu, aliquet ante. Phasellus commodo id lectus eget vestibulum. Integer vestibulum, elit at porttitor pulvinar, nibh mi faucibus nisl, eu finibus magna lorem in leo. ",
+                "comments": [
+                    {
+                        "username": "",
+                        "comment": ""
+                    }
+                ],
+                "likes": "9",
+                "photos": [
+                    "img/academic.jpg"
                 ]
             }
         }

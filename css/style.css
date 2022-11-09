@@ -88,10 +88,10 @@ body{
 
 /* STYLE FROM OLD PROJECT*/
 #intro{
-    width: 110vw;
-    height: 100vh;
+    width: 100vw;
+    height:100vh;
     display: grid;
-    grid: 1fr/ 1fr 1fr;
+    grid: 1fr 1fr/ 1fr;
 }
 
 #mapid {
@@ -139,7 +139,7 @@ body{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
     #intro{
         grid: 1fr 1fr/ 1fr;
     }

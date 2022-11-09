@@ -35,7 +35,7 @@
         
                     <div class="row">
                         <div class="container text-center">
-                            <h4>Itineraries</h4>
+                            <h4>Upcoming itineraries</h4>
                         </div>
                     </div>
         
@@ -43,12 +43,25 @@
             </nav>
 
             <div class="container">
-                <br><p>
-                <a href="newItinerary.html" class="btn btn-primary btn-block btn-lg"><span class="glyphicon glyphicon-plus-sign"> Create a new itinerary!</span></a>
-                </p><br>
                 <p>
-                <a href="upcomingItineraries.php" class="btn btn-primary btn-block btn-lg"><span class="glyphicon glyphicon-time"> Upcoming itineraries!</span></a>
+                    <h3>Your next itineraries:</h3><br>
                 </p>
+                <?php
+                $string = file_get_contents('itineraries.txt');
+                $itineraries_json = json_decode($string);
+                $itineraries_array = $itineraries_json->itineraries;
+
+                session_start();
+                foreach($itineraries_array as $itinerary){
+                    if($_SESSION['loggedName'] == $itinerary->owner){
+                        echo '<p>';
+                        echo '<a href="itineraryDetails.php?id='.$itinerary->id.'" class="btn btn-primary btn-block btn-lg">'.$itinerary->city.'   '.$itinerary->date.'</a>';
+                        echo '</p><br>';
+                    }
+                }
+                
+                
+                ?>
             </div>
 
             

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
     
-    <title>Itineraries</title>
+    <title>Pin</title>
     
      <!-- Style Sheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -23,8 +23,20 @@
 
 <body>
 
-    
-       
+<?php
+$string = file_get_contents('pins.txt');
+$pins_json = json_decode($string);
+$pins_array = $pins_json->features;
+
+$pin_detailed=null;
+
+foreach($pins_array as $pin){
+    if($pin->id == $_GET["id"]){
+        $pin_detailed=$pin;
+    }
+}
+?>
+
             <nav class="navbar-default-top navbar-fixed-top">
         
                 <div class="container text-center">
@@ -35,7 +47,7 @@
         
                     <div class="row">
                         <div class="container text-center">
-                            <h4>Itineraries</h4>
+                            <h4><?php echo $pin_detailed->properties->name;?></h4>
                         </div>
                     </div>
         
@@ -43,13 +55,46 @@
             </nav>
 
             <div class="container">
-                <br><p>
-                <a href="newItinerary.html" class="btn btn-primary btn-block btn-lg"><span class="glyphicon glyphicon-plus-sign"> Create a new itinerary!</span></a>
-                </p><br>
-                <p>
-                <a href="upcomingItineraries.php" class="btn btn-primary btn-block btn-lg"><span class="glyphicon glyphicon-time"> Upcoming itineraries!</span></a>
-                </p>
-            </div>
+                <div class="row">
+                    <div class="col-xs-2" >
+                        <span class="glyphicon glyphicon-send " style="font-size: 25px; margin-top: 10px;"></span>
+                    </div>
+                    <div class="col-xs-10">
+                        <h5>
+                            R. Vandelli 2, <br>
+                            3004-547
+                            <?php
+                            echo $pin_detailed->properties->city;
+                            ?>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-2" >
+                        <span class="glyphicon glyphicon-star " style="font-size: 25px; margin-top: 10px;"></span>
+                    </div>
+                    <div class="col-xs-10">
+                        <h5>
+                            By <?php echo $pin_detailed->properties->likes ?> people
+                        </h5><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                <div class="col-xs-10 col-off-xs-1" >
+                    <h5>
+                        <?php echo $pin_detailed->properties->description?>
+                    </h5><br>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-xs-10 col-off-xs-1" >
+                <img src="<?php echo $pin_detailed->properties->photos[0] ?>" class="img-fluid img-responsive img-thumbnail">';
+                </div>
+                </div>
+</div>
 
             
         

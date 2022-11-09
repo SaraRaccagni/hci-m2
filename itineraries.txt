@@ -1,0 +1,1 @@
+{"type":"ItineraryCollection","lastId":1,"itineraries":[{"type":"Itinerary","id":1,"owner":"Saretta","city":"coimbra","date":"15-11-2022","hour":"13","minutes":"25","frameHour":"02","frameMinutes":"10","km":"2","meters":"600","filters":["Sad","Bars"],"compSettings":"Private","pins":["1","2","3"]}]}

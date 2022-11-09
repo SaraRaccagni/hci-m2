@@ -72,11 +72,11 @@ function compPalavras(palavras2) {
 
             //CLICK WORD -> SHOW MARKER
             h1_pin.addEventListener("click", function(){
-                layer.bindPopup('<h2>' + feature.properties.name + '</h2>').openPopup();
+                layer.bindPopup('<h2>' + feature.properties.name + '</h2><a href="pinDetails.php?id='+feature.id+'"><span class="glyphicon glyphicon-zoom-in">more details</span></a>').openPopup();
             });
 
             // ZOOM AND CENTER MARKER WHEN CLICKING
-            var popup = L.popup().setContent('<h2>' + feature.properties.name + '</h2>');
+            var popup = L.popup().setContent('<h2>' + feature.properties.name + '</h2><a href="pinDetails.php?id='+feature.id+'"><span class="glyphicon glyphicon-zoom-in">more details</span></a>');
             layer.bindPopup(popup).openPopup();
 
             mymap.on('popupopen', function(centerMarker) {

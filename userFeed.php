@@ -117,7 +117,7 @@
                             <a href="itinerary.html"><span class="glyphicon glyphicon-transfer glyphicon-nav" style="color:black"></span></a>
                         </div>
                         <div class="col-xs-3">
-                            <a href="profile.html"><span class="glyphicon glyphicon-user glyphicon-nav" style="color:black"></span></a>
+                            <a href="profile.php"><span class="glyphicon glyphicon-user glyphicon-nav" style="color:black"></span></a>
                         </div>
                     </div>
                 </div>
