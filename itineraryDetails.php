@@ -74,7 +74,7 @@
                         echo 'Space Range&emsp;&emsp;&emsp;'.$itinerary->km.'km '.$itinerary->meters;
                         echo '</h4></div></div>';
                         echo '<div class="row"><div class="col-xs-10 col-off-xs-2"><h4>';
-                        echo 'Filters&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;'.$itinerary->filters[0].', '.$itinerary->filters[1];
+                        echo 'Filters&emsp;&emsp;&emsp;&emsp;'.implode(", ",$itinerary->filters);
                         echo '</h4></div></div>';
                         echo '<div class="row"><div class="col-xs-10 col-off-xs-2"><h4>';
                         echo 'It will be '.$itinerary->compSettings.'!';

@@ -107,10 +107,10 @@ foreach($pins_array as $pin){
                             <a href="feed.php"><span class="glyphicon glyphicon-home glyphicon-nav" style="color:black"></span></a>
                         </div>
                         <div class="col-xs-3">
-                            <a href="mapa_index.php"><span class="glyphicon glyphicon-map-marker glyphicon-nav" style="color:black"></span></a>
+                            <a href="mapa_index.php"><span class="glyphicon glyphicon-map-marker glyphicon-nav" style="color:blue"></span></a>
                         </div>
                         <div class="col-xs-3">
-                            <a href="itinerary.html"><span class="glyphicon glyphicon-transfer glyphicon-nav" style="color:blue"></span></a>
+                            <a href="itinerary.html"><span class="glyphicon glyphicon-transfer glyphicon-nav" style="color:black"></span></a>
                         </div>
                         <div class="col-xs-3">
                             <a href="profile.php"><span class="glyphicon glyphicon-user glyphicon-nav" style="color:black"></span></a>

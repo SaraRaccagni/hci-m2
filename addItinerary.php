@@ -5,22 +5,21 @@ $string = file_get_contents('pins.txt');
 $pins_json = json_decode($string);
 $pins_array = $pins_json->features;
 
-//DA VEDERE COME FUNZIONANO I CONTROLLI SULLA CHECKBOX
 //New itnerary request
-$checkbox1=array("customCheck1","customCheck2","customCheck3","customCheck4","customCheck5","customCheck6");
+$checkbox=array("customCheck1","customCheck2","customCheck3","customCheck4","customCheck5","customCheck6");
 $categories = array();
-foreach($checkbox1 as $box){
+foreach($checkbox as $box){
     if (isset($_POST[$box])){
         array_push($categories, $_POST[$box]);
     }
 }
 
-$checkbox2=array("customCheck7","customCheck8","customCheck9");
-foreach($checkbox2 as $box){
-    if (isset($_POST[$box])){
-        $compSett= $_POST[$box];
-    }
-}
+// $radio=array("customCheck7","customCheck8","customCheck9");
+// foreach($radio as $box){
+//     if (isset($_POST[$box])){
+//         $compSett= $_POST[$box];
+//     }
+// }
 
 $pins=array();
 
@@ -58,7 +57,7 @@ $new_itinerary=array(
          'km' => $_POST['km'],
          'meters' => $_POST['meters'],
          'filters' => $categories,
-         'compSettings' => $compSett,
+         'compSettings' => $_POST['optradio'],
          'pins' => $pins
         );
 

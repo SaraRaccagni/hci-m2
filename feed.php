@@ -38,7 +38,7 @@
             </nav>
 
             
-            <div class="container">
+            <div class="container"> 
                 <textarea name="latitude" id="latitude"></textarea>
                 <textarea name="longitude" id="longitude"></textarea>
 
